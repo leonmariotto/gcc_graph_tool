@@ -3,9 +3,7 @@
 import logging
 import re
 from .DotConfig import DotConfig
-from .CIParser import CIGraph
 import pydot
-from graphviz import Digraph
 
 logging.basicConfig(
     level=logging.DEBUG,
@@ -35,7 +33,6 @@ class DotEngine:
             label = node.get_label()
             match = re.search(r"VCG:\\\s*\d+:\\\s*([_a-zA-Z0-9]+)", label)
             if match is None:
-                print(label)
                 raise DotEngineError()
             node.set_label(match.group(1).strip())
 
@@ -67,52 +64,3 @@ class DotEngine:
         Write the content of graph into a SVG file.
         """
         self.pydot_graph.write_svg(output_path)
-
-    def create_svg_from_ci_graph(
-        self, dot_config: DotConfig, ci_graph: CIGraph, output_path: str
-    ):
-        """
-        Use CIGraph infos to build dot file and export it to svg.
-        """
-        dot = Digraph(name=dot_config.title, format="svg")
-
-        # === Global attributes ===
-        dot.attr(rankdir=dot_config.global_conf.rankdir)
-        dot.attr(bgcolor=dot_config.global_conf.bgcolor)
-
-        # === Default node attributes ===
-        dot.attr(
-            "node",
-            # shape=dot_config.node.shape,
-            style=dot_config.node.style,
-            color=dot_config.node.color,
-            fillcolor=dot_config.node.fillcolor,
-            fontname=dot_config.node.fontname,
-            fontcolor=dot_config.node.fontcolor,
-        )
-        dot.attr(
-            "edge",
-            color=dot_config.edge.color,
-            arrowhead=dot_config.edge.arrowhead,
-            arrowsize=dot_config.edge.arrowsize,
-            fontname=dot_config.edge.fontname,
-            fontsize=dot_config.edge.fontsize,
-        )
-        self.logger.debug("Create SVG from CI graph.")
-
-        i = 0
-        for node in ci_graph.nodes:
-            dot.node(node.title, label=node.label)
-            i += 1
-        self.logger.debug(f"Added {i} node to graph !")
-        i = 0
-        for edge in ci_graph.edges:
-            dot.edge(edge.sourcename, edge.targetname, label=edge.label)
-            i += 1
-        self.logger.debug(f"Added {i} edges to graph !")
-
-        # === Render to SVG file ===
-        dot.render(outfile=output_path, cleanup=True)
-        self.logger.debug(f"Render to svg ({output_path})")
-
-        return dot

@@ -4,6 +4,10 @@ Used to parse .ci file. CI stand for "compiler internal", probably.
 There is no official spec for this format. It is based on VCG (now obsolete).
 """
 
+# !!!! WARNING !!!!
+# This code is unused, .ci file are not the great way to get usefull stuff from GCC.
+# There is better way (GCC's .dot, to get stack usage we can parse .su file)
+
 import logging
 import re
 from typing import List
