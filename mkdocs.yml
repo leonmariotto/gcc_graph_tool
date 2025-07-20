@@ -1,0 +1,5 @@
+site_name: GCC Graphs Tool
+theme:
+  name: material
+  palette:
+    scheme: slate

@@ -1,0 +1,141 @@
+graph: { title: "src/list_test.c"
+node: { title: "src/list_test.c:list_test_list_init" label: "list_test_list_init\nsrc/list_test.c:387:13\n16 bytes (static)\n0 dynamic objects" }
+node: { title: "_assert_true" label: "_assert_true\ncmocka/include/cmocka.h:4522:6" shape : ellipse }
+edge: { sourcename: "src/list_test.c:list_test_list_init" targetname: "_assert_true" label: "src/list_test.c:395:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_init" targetname: "_assert_true" label: "src/list_test.c:396:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_init" targetname: "_assert_true" label: "src/list_test.c:397:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_init" targetname: "_assert_true" label: "src/list_test.c:398:2" }
+node: { title: "src/list_test.c:list_test_list_is_singular" label: "list_test_list_is_singular\nsrc/list_test.c:53:13\n32 bytes (static)\n0 dynamic objects" }
+node: { title: "_assert_false" label: "_assert_false\ncmocka/include/cmocka.h:4525:6" shape : ellipse }
+edge: { sourcename: "src/list_test.c:list_test_list_is_singular" targetname: "_assert_false" label: "src/list_test.c:59:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_is_singular" targetname: "_assert_true" label: "src/list_test.c:64:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_is_singular" targetname: "_assert_false" label: "src/list_test.c:69:2" }
+node: { title: "src/list_test.c:list_test_list_cut_position" label: "list_test_list_cut_position\nsrc/list_test.c:72:13\n160 bytes (static)\n0 dynamic objects" }
+node: { title: "_assert_ptr_equal_msg" label: "_assert_ptr_equal_msg\ncmocka/include/cmocka.h:4562:6" shape : ellipse }
+edge: { sourcename: "src/list_test.c:list_test_list_cut_position" targetname: "_assert_ptr_equal_msg" label: "src/list_test.c:88:3" }
+node: { title: "_assert_int_equal" label: "_assert_int_equal\ncmocka/include/cmocka.h:4545:6" shape : ellipse }
+edge: { sourcename: "src/list_test.c:list_test_list_cut_position" targetname: "_assert_int_equal" label: "src/list_test.c:92:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_cut_position" targetname: "_assert_ptr_equal_msg" label: "src/list_test.c:95:3" }
+node: { title: "__stack_chk_fail" label: "__stack_chk_fail\n<built-in>" shape : ellipse }
+edge: { sourcename: "src/list_test.c:list_test_list_cut_position" targetname: "__stack_chk_fail" }
+node: { title: "src/list_test.c:list_test_list_cut_before" label: "list_test_list_cut_before\nsrc/list_test.c:100:13\n160 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "src/list_test.c:list_test_list_cut_before" targetname: "_assert_ptr_equal_msg" label: "src/list_test.c:116:3" }
+edge: { sourcename: "src/list_test.c:list_test_list_cut_before" targetname: "_assert_int_equal" label: "src/list_test.c:120:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_cut_before" targetname: "_assert_ptr_equal_msg" label: "src/list_test.c:123:3" }
+edge: { sourcename: "src/list_test.c:list_test_list_cut_before" targetname: "__stack_chk_fail" }
+node: { title: "src/list_test.c:list_test_list_splice" label: "list_test_list_splice\nsrc/list_test.c:128:13\n160 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "src/list_test.c:list_test_list_splice" targetname: "_assert_ptr_equal_msg" label: "src/list_test.c:146:3" }
+edge: { sourcename: "src/list_test.c:list_test_list_splice" targetname: "_assert_int_equal" label: "src/list_test.c:150:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_splice" targetname: "__stack_chk_fail" }
+node: { title: "src/list_test.c:list_test_list_splice_tail" label: "list_test_list_splice_tail\nsrc/list_test.c:153:13\n160 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "src/list_test.c:list_test_list_splice_tail" targetname: "_assert_ptr_equal_msg" label: "src/list_test.c:171:3" }
+edge: { sourcename: "src/list_test.c:list_test_list_splice_tail" targetname: "_assert_int_equal" label: "src/list_test.c:175:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_splice_tail" targetname: "__stack_chk_fail" }
+node: { title: "src/list_test.c:list_test_list_splice_tail_init" label: "list_test_list_splice_tail_init\nsrc/list_test.c:205:13\n160 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "src/list_test.c:list_test_list_splice_tail_init" targetname: "_assert_ptr_equal_msg" label: "src/list_test.c:223:3" }
+edge: { sourcename: "src/list_test.c:list_test_list_splice_tail_init" targetname: "_assert_int_equal" label: "src/list_test.c:227:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_splice_tail_init" targetname: "_assert_true" label: "src/list_test.c:229:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_splice_tail_init" targetname: "__stack_chk_fail" }
+node: { title: "src/list_test.c:list_test_list_del" label: "list_test_list_del\nsrc/list_test.c:232:13\n80 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "src/list_test.c:list_test_list_del" targetname: "_assert_ptr_equal_msg" label: "src/list_test.c:244:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_del" targetname: "_assert_ptr_equal_msg" label: "src/list_test.c:245:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_del" targetname: "__stack_chk_fail" }
+node: { title: "src/list_test.c:list_test_list_replace" label: "list_test_list_replace\nsrc/list_test.c:248:13\n96 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "src/list_test.c:list_test_list_replace" targetname: "_assert_ptr_equal_msg" label: "src/list_test.c:260:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_replace" targetname: "_assert_ptr_equal_msg" label: "src/list_test.c:261:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_replace" targetname: "__stack_chk_fail" }
+node: { title: "src/list_test.c:list_test_list_bulk_move_tail" label: "list_test_list_bulk_move_tail\nsrc/list_test.c:302:13\n256 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "src/list_test.c:list_test_list_bulk_move_tail" targetname: "_assert_ptr_equal_msg" label: "src/list_test.c:325:3" }
+edge: { sourcename: "src/list_test.c:list_test_list_bulk_move_tail" targetname: "_assert_int_equal" label: "src/list_test.c:328:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_bulk_move_tail" targetname: "_assert_ptr_equal_msg" label: "src/list_test.c:331:3" }
+edge: { sourcename: "src/list_test.c:list_test_list_bulk_move_tail" targetname: "_assert_int_equal" label: "src/list_test.c:334:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_bulk_move_tail" targetname: "__stack_chk_fail" }
+node: { title: "src/list_test.c:list_test_list_swap" label: "list_test_list_swap\nsrc/list_test.c:337:13\n112 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "src/list_test.c:list_test_list_swap" targetname: "_assert_ptr_equal_msg" label: "src/list_test.c:349:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_swap" targetname: "_assert_ptr_equal_msg" label: "src/list_test.c:350:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_swap" targetname: "_assert_ptr_equal_msg" label: "src/list_test.c:352:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_swap" targetname: "_assert_ptr_equal_msg" label: "src/list_test.c:353:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_swap" targetname: "_assert_ptr_equal_msg" label: "src/list_test.c:355:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_swap" targetname: "_assert_ptr_equal_msg" label: "src/list_test.c:356:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_swap" targetname: "__stack_chk_fail" }
+node: { title: "src/list_test.c:list_test_list_add_tail" label: "list_test_list_add_tail\nsrc/list_test.c:359:13\n96 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "src/list_test.c:list_test_list_add_tail" targetname: "_assert_ptr_equal_msg" label: "src/list_test.c:368:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_add_tail" targetname: "_assert_ptr_equal_msg" label: "src/list_test.c:369:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_add_tail" targetname: "_assert_ptr_equal_msg" label: "src/list_test.c:370:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_add_tail" targetname: "__stack_chk_fail" }
+node: { title: "src/list_test.c:list_test_list_add" label: "list_test_list_add\nsrc/list_test.c:373:13\n96 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "src/list_test.c:list_test_list_add" targetname: "_assert_ptr_equal_msg" label: "src/list_test.c:382:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_add" targetname: "_assert_ptr_equal_msg" label: "src/list_test.c:383:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_add" targetname: "_assert_ptr_equal_msg" label: "src/list_test.c:384:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_add" targetname: "__stack_chk_fail" }
+node: { title: "src/list_test.c:list_test_list_entry_is_head" label: "list_test_list_entry_is_head\nsrc/list_test.c:406:13\n16 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "src/list_test.c:list_test_list_entry_is_head" targetname: "_assert_true" label: "src/list_test.c:415:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_entry_is_head" targetname: "_assert_false" label: "src/list_test.c:417:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_entry_is_head" targetname: "_assert_false" label: "src/list_test.c:419:2" }
+node: { title: "src/list_test.c:list_test_list_first_entry" label: "list_test_list_first_entry\nsrc/list_test.c:423:13\n96 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "src/list_test.c:list_test_list_first_entry" targetname: "_assert_ptr_equal_msg" label: "src/list_test.c:432:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_first_entry" targetname: "__stack_chk_fail" }
+node: { title: "src/list_test.c:list_test_list_last_entry" label: "list_test_list_last_entry\nsrc/list_test.c:436:13\n96 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "src/list_test.c:list_test_list_last_entry" targetname: "_assert_ptr_equal_msg" label: "src/list_test.c:445:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_last_entry" targetname: "__stack_chk_fail" }
+node: { title: "src/list_test.c:list_test_list_first_entry_or_null" label: "list_test_list_first_entry_or_null\nsrc/list_test.c:449:13\n128 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "src/list_test.c:list_test_list_first_entry_or_null" targetname: "_assert_false" label: "src/list_test.c:454:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_first_entry_or_null" targetname: "_assert_ptr_equal_msg" label: "src/list_test.c:460:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_first_entry_or_null" targetname: "__stack_chk_fail" }
+node: { title: "src/list_test.c:list_test_list_next_entry" label: "list_test_list_next_entry\nsrc/list_test.c:465:13\n96 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "src/list_test.c:list_test_list_next_entry" targetname: "_assert_ptr_equal_msg" label: "src/list_test.c:474:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_next_entry" targetname: "__stack_chk_fail" }
+node: { title: "src/list_test.c:list_test_list_prev_entry" label: "list_test_list_prev_entry\nsrc/list_test.c:478:13\n96 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "src/list_test.c:list_test_list_prev_entry" targetname: "_assert_ptr_equal_msg" label: "src/list_test.c:487:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_prev_entry" targetname: "__stack_chk_fail" }
+node: { title: "src/list_test.c:list_test_list_for_each" label: "list_test_list_for_each\nsrc/list_test.c:491:13\n128 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "src/list_test.c:list_test_list_for_each" targetname: "_assert_ptr_equal_msg" label: "src/list_test.c:502:3" }
+edge: { sourcename: "src/list_test.c:list_test_list_for_each" targetname: "_assert_int_equal" label: "src/list_test.c:506:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_for_each" targetname: "__stack_chk_fail" }
+node: { title: "src/list_test.c:list_test_list_for_each_prev" label: "list_test_list_for_each_prev\nsrc/list_test.c:509:13\n128 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "src/list_test.c:list_test_list_for_each_prev" targetname: "_assert_ptr_equal_msg" label: "src/list_test.c:520:3" }
+edge: { sourcename: "src/list_test.c:list_test_list_for_each_prev" targetname: "_assert_int_equal" label: "src/list_test.c:524:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_for_each_prev" targetname: "__stack_chk_fail" }
+node: { title: "src/list_test.c:list_test_list_splice_init" label: "list_test_list_splice_init\nsrc/list_test.c:178:13\n160 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "src/list_test.c:list_test_list_splice_init" targetname: "_assert_ptr_equal_msg" label: "src/list_test.c:196:3" }
+edge: { sourcename: "src/list_test.c:list_test_list_splice_init" targetname: "_assert_int_equal" label: "src/list_test.c:200:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_splice_init" targetname: "_assert_true" label: "src/list_test.c:202:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_splice_init" targetname: "__stack_chk_fail" }
+node: { title: "src/list_test.c:list_test_list_move" label: "list_test_list_move\nsrc/list_test.c:264:13\n96 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "src/list_test.c:list_test_list_move" targetname: "_assert_true" label: "src/list_test.c:277:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_move" targetname: "_assert_ptr_equal_msg" label: "src/list_test.c:279:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_move" targetname: "_assert_ptr_equal_msg" label: "src/list_test.c:280:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_move" targetname: "__stack_chk_fail" }
+node: { title: "src/list_test.c:list_test_list_rotate_left" label: "list_test_list_rotate_left\nsrc/list_test.c:12:13\n96 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "src/list_test.c:list_test_list_rotate_left" targetname: "_assert_ptr_equal_msg" label: "src/list_test.c:24:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_rotate_left" targetname: "_assert_ptr_equal_msg" label: "src/list_test.c:25:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_rotate_left" targetname: "_assert_ptr_equal_msg" label: "src/list_test.c:26:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_rotate_left" targetname: "__stack_chk_fail" }
+node: { title: "src/list_test.c:list_test_list_move_tail" label: "list_test_list_move_tail\nsrc/list_test.c:283:13\n96 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "src/list_test.c:list_test_list_move_tail" targetname: "_assert_true" label: "src/list_test.c:296:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_move_tail" targetname: "_assert_ptr_equal_msg" label: "src/list_test.c:298:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_move_tail" targetname: "_assert_ptr_equal_msg" label: "src/list_test.c:299:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_move_tail" targetname: "__stack_chk_fail" }
+node: { title: "src/list_test.c:list_test_list_rotate_to_front" label: "list_test_list_rotate_to_front\nsrc/list_test.c:29:13\n176 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "src/list_test.c:list_test_list_rotate_to_front" targetname: "_assert_ptr_equal_msg" label: "src/list_test.c:47:3" }
+edge: { sourcename: "src/list_test.c:list_test_list_rotate_to_front" targetname: "_assert_int_equal" label: "src/list_test.c:50:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_rotate_to_front" targetname: "__stack_chk_fail" }
+node: { title: "src/list_test.c:list_test_list_for_each_entry_continue" label: "list_test_list_for_each_entry_continue\nsrc/list_test.c:548:13\n192 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "src/list_test.c:list_test_list_for_each_entry_continue" targetname: "_assert_int_equal" label: "src/list_test.c:563:3" }
+edge: { sourcename: "src/list_test.c:list_test_list_for_each_entry_continue" targetname: "_assert_int_equal" label: "src/list_test.c:567:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_for_each_entry_continue" targetname: "__stack_chk_fail" }
+node: { title: "src/list_test.c:list_test_list_for_each_entry_reverse" label: "list_test_list_for_each_entry_reverse\nsrc/list_test.c:570:13\n192 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "src/list_test.c:list_test_list_for_each_entry_reverse" targetname: "_assert_int_equal" label: "src/list_test.c:584:3" }
+edge: { sourcename: "src/list_test.c:list_test_list_for_each_entry_reverse" targetname: "_assert_int_equal" label: "src/list_test.c:588:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_for_each_entry_reverse" targetname: "__stack_chk_fail" }
+node: { title: "src/list_test.c:list_test_list_for_each_entry" label: "list_test_list_for_each_entry\nsrc/list_test.c:527:13\n192 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "src/list_test.c:list_test_list_for_each_entry" targetname: "_assert_int_equal" label: "src/list_test.c:541:3" }
+edge: { sourcename: "src/list_test.c:list_test_list_for_each_entry" targetname: "_assert_int_equal" label: "src/list_test.c:545:2" }
+edge: { sourcename: "src/list_test.c:list_test_list_for_each_entry" targetname: "__stack_chk_fail" }
+node: { title: "run_list_test" label: "run_list_test\nsrc/list_test.c:597:6\n1184 bytes (static)\n0 dynamic objects" }
+node: { title: "cmocka_set_message_output" label: "cmocka_set_message_output\ncmocka/include/cmocka.h:4758:6" shape : ellipse }
+edge: { sourcename: "run_list_test" targetname: "cmocka_set_message_output" label: "src/list_test.c:630:2" }
+node: { title: "_cmocka_run_group_tests" label: "_cmocka_run_group_tests\ncmocka/include/cmocka.h:4664:5" shape : ellipse }
+edge: { sourcename: "run_list_test" targetname: "_cmocka_run_group_tests" label: "src/list_test.c:631:12" }
+edge: { sourcename: "run_list_test" targetname: "__stack_chk_fail" }
+}

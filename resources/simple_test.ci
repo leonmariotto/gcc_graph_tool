@@ -1,0 +1,18 @@
+graph: { title: "src/simple_test.c"
+node: { title: "mystrlen" label: "mystrlen\nsrc/simple_test.c:7:5\n16 bytes (static)\n0 dynamic objects" }
+node: { title: "strlen" label: "__builtin_strlen\n<built-in>" shape : ellipse }
+edge: { sourcename: "mystrlen" targetname: "strlen" label: "src/simple_test.c:11:21" }
+node: { title: "mystrdup" label: "mystrdup\nsrc/simple_test.c:18:7\n32 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "mystrdup" targetname: "strlen" label: "src/simple_test.c:11:21" }
+node: { title: "malloc" label: "malloc\n/usr/include/stdlib.h:672:14" shape : ellipse }
+edge: { sourcename: "mystrdup" targetname: "malloc" label: "src/simple_test.c:22:8" }
+node: { title: "__memcpy_chk" label: "__builtin___memcpy_chk\n<built-in>" shape : ellipse }
+edge: { sourcename: "mystrdup" targetname: "__memcpy_chk" label: "/usr/include/x86_64-linux-gnu/bits/string_fortified.h:29:10" }
+node: { title: "myputstr" label: "myputstr\nsrc/simple_test.c:27:6\n16 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "myputstr" targetname: "strlen" label: "src/simple_test.c:11:21" }
+node: { title: "write" label: "write\n/usr/include/unistd.h:378:16" shape : ellipse }
+edge: { sourcename: "myputstr" targetname: "write" label: "src/simple_test.c:30:10" }
+node: { title: "swap" label: "swap\nsrc/simple_test.c:34:6\n8 bytes (static)\n0 dynamic objects" }
+node: { title: "run_simple_test" label: "run_simple_test\nsrc/simple_test.c:42:5\n16 bytes (static)\n0 dynamic objects" }
+edge: { sourcename: "run_simple_test" targetname: "write" label: "src/simple_test.c:30:10" }
+}

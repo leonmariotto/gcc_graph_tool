@@ -1,0 +1,35 @@
+title: "Callgraph"
+
+global_conf:
+  rankdir: "LR" # Left to right
+  bgcolor: "#f9f9f9"
+  fontname: "Helvetica" # Default font
+  fontsize: 12
+  splines: true
+
+node:
+  shape: "box" # circle, ellipse, box, diamond, etc.
+  style: "filled,rounded" # filled, dashed, bold, rounded
+  color: "#5b9bd5" # Border color
+  fillcolor: "#dbe5f1" # Node fill color
+  fontcolor: "#1f4e79" # Text color
+  fontname: "Verdana"
+  fontsize: 11
+
+edge:
+  color: "#999999" #
+  arrowhead: "normal" # Types: normal, vee, diamond, etc.
+  style: "solid" # solid, dashed, dotted, bold
+  arrowsize: "1.5" #
+  fontname: "Verdana" #
+  fontsize: "10" #
+  fontcolor: "#666666" #
+
+# Control the layout engine to use
+#   - dot     : hierarchical layout (default)
+#   - neato   : spring model layout
+#   - fdp     : force-directed placement
+#   - sfdp    : multi-scale force-directed
+#   - circo   : circular layout
+#   - twopi   : radial layout
+layout_engine: "dot"
