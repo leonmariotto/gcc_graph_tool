@@ -5,7 +5,7 @@ import click
 from typing import List
 from .DotConfig import DotConfig
 from .YamlParser import YamlParser
-from .DotEngine import DotEngine
+from .CgraphParser import CgraphParser
 
 
 @click.command()
@@ -44,7 +44,5 @@ def gcc_graph_tool(
         logging.debug("Loading yml {%s}", y)
         yaml_parser.parse(y)
     dot_config = DotConfig(**yaml_parser.data)
-    dot_engine = DotEngine(input_file)
-    dot_engine.modify_attributes(dot_config)
-    dot_engine.modify_nodes_label()
-    dot_engine.write_svg(output_file)
+    cgraph_parser = CgraphParser(input_file)
+    cgraph_parser.create_callgraph(dot_config, output_file)

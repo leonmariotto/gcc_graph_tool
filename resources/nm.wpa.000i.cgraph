@@ -1,0 +1,1115 @@
+Creating file build/obj/main.o with sub id 0x7994382d51431fd6
+Creating file build/obj/nm_bin.o with sub id 0x8317a18b1592eca3
+Creating file build/obj/nm_bin_dump.o with sub id 0xedce812a47c67a28
+Creating file build/obj/nm_bin_parse.o with sub id 0x604d0b9e02cb3e29
+Creating file build/obj/nm_bin_test.o with sub id 0x3777bef4680f12fd
+Creating file build/obj/nm_bin_transform.o with sub id 0x454884eda3ebd799
+Creating file build/obj/nm_bin_write.o with sub id 0xd5eacc1141779678
+Creating file build/obj/nm.o with sub id 0xba9036a7ee6bb90d
+Creating file build/obj/nm_getopt.o with sub id 0x3e0cbebb9f0475c7
+Creating file build/obj/nm_utils.o with sub id 0x4ae2c2c15fd54279
+Symbol table:
+
+__ctype_toupper_loc/980 (__ctype_toupper_loc)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Unit id: 10
+  Function flags:
+  Called by: print_info_lg/977 (536870913 (estimated locally),0.50 per call) 
+  Calls: 
+__dprintf_chk/978 (__dprintf_chk)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Unit id: 10
+  Function flags:
+  Called by: print_addr/976 (58174370 (estimated locally),0.33 per call) err_return_null/975 (1073741824 (estimated locally),1.00 per call) err_return/974 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+print_info_lg/977 (print_info_lg)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  References: 
+  Referring: 
+  Read from file: build/obj/nm_utils.o
+  Availability: available
+  Unit id: 10
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: __printf_chk/244 (1073741824 (estimated locally),1.00 per call) __ctype_toupper_loc/980 (536870913 (estimated locally),0.50 per call) 
+print_addr/976 (print_addr)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  References: 
+  Referring: 
+  Read from file: build/obj/nm_utils.o
+  Availability: available
+  Unit id: 10
+  Function flags: count:176285970 (estimated locally)
+  Called by: 
+  Calls: __printf_chk/244 (176285970 (estimated locally),1.00 per call) __printf_chk/244 (955630225 (estimated locally),5.42 per call) __dprintf_chk/978 (58174370 (estimated locally),0.33 per call) 
+err_return_null/975 (err_return_null)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  References: 
+  Referring: 
+  Read from file: build/obj/nm_utils.o
+  Availability: available
+  Unit id: 10
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: __dprintf_chk/978 (1073741824 (estimated locally),1.00 per call) 
+err_return/974 (err_return)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  References: 
+  Referring: 
+  Read from file: build/obj/nm_utils.o
+  Availability: available
+  Unit id: 10
+  Function flags: count:1073741824 (estimated locally)
+  Called by: nm_bin_load/818 (283038344 (estimated locally),0.26 per call) nm_bin_load/818 (160038383 (estimated locally),0.15 per call) nm_bin_load/818 (208119481 (estimated locally),0.19 per call) nm_bin_load/818 (143665511 (estimated locally),0.13 per call) nm_bin_load/818 (50449411 (estimated locally),0.05 per call) 
+  Calls: __dprintf_chk/978 (1073741824 (estimated locally),1.00 per call) 
+strlen/927 (strlen)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Unit id: 9
+  Function flags:
+  Called by: nm_getopt/922 (28695331 (estimated locally),3.23 per call) 
+  Calls: 
+nm_printopt/923 (nm_printopt)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  References: 
+  Referring: 
+  Read from file: build/obj/nm_getopt.o
+  Availability: available
+  Unit id: 9
+  Function flags: count:118111600 (estimated locally)
+  Called by: 
+  Calls: __printf_chk/244 (955630225 (estimated locally),8.09 per call) __printf_chk/244 (118111600 (estimated locally),1.00 per call) __printf_chk/244 (118111600 (estimated locally),1.00 per call) __printf_chk/244 (118111600 (estimated locally),1.00 per call) __printf_chk/244 (118111600 (estimated locally),1.00 per call) 
+flags_list/909 (flags_list)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly
+  References: 
+  Referring: nm_getopt/922 (read) 
+  Read from file: build/obj/nm_getopt.o
+  Availability: available
+  Varpool flags: initialized
+flags_handler/921 (flags_handler)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly
+  References: nm_getopt_help/913 (addr) nm_getopt_help/913 (addr) nm_getopt_config/914 (addr) nm_getopt_config/914 (addr) nm_getopt_phdr/917 (addr) nm_getopt_phdr/917 (addr) nm_getopt_ehdr/916 (addr) nm_getopt_ehdr/916 (addr) nm_getopt_section/918 (addr) nm_getopt_section/918 (addr) nm_getopt_symbols/920 (addr) nm_getopt_symbols/920 (addr) nm_getopt_hexdump/919 (addr) nm_getopt_hexdump/919 (addr) nm_getopt_nm/912 (addr) nm_getopt_test/915 (addr) nm_getopt_outfile/911 (addr) nm_getopt_outfile/911 (addr) 
+  Referring: nm_getopt/922 (read) 
+  Read from file: build/obj/nm_getopt.o
+  Availability: available
+  Varpool flags: initialized
+nm_getopt/922 (nm_getopt)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  References: flags_handler/921 (read) flags_list/909 (read) 
+  Referring: 
+  Read from file: build/obj/nm_getopt.o
+  Availability: available
+  Unit id: 9
+  Function flags: count:8893213 (estimated locally)
+  Called by: main/58 (1073741824 (estimated locally),1.00 per call) 
+  Calls: ft_lstpush/251 (28695331 (estimated locally),3.23 per call) ft_lstnew/250 (28695331 (estimated locally),3.23 per call) strlen/927 (28695331 (estimated locally),3.23 per call) ft_lstpush/251 (899993 (estimated locally),0.10 per call) ft_lstnew/250 (899993 (estimated locally),0.10 per call) strcmp/252 (1014686025 (estimated locally),114.10 per call) 
+   Indirect call(55807731 (estimated locally),6.28 per call) num speculative call targets: 0
+flags_help/910 (flags_help)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly
+  References: 
+  Referring: nm_getopt_help/913 (read) 
+  Read from file: build/obj/nm_getopt.o
+  Availability: available
+  Varpool flags: initialized
+nm_getopt_help/913 (nm_getopt_help)
+  Type: function definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly
+  Address is taken.
+  References: flags_help/910 (read) 
+  Referring: flags_handler/921 (addr) flags_handler/921 (addr) 
+  Read from file: build/obj/nm_getopt.o
+  Availability: available
+  Unit id: 9
+  Function flags: count:118111600 (estimated locally)
+  Called by: 
+  Calls: __printf_chk/244 (955630225 (estimated locally),8.09 per call) 
+nm_getopt_symbols/920 (nm_getopt_symbols)
+  Type: function definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: flags_handler/921 (addr) flags_handler/921 (addr) 
+  Read from file: build/obj/nm_getopt.o
+  Availability: available
+  Unit id: 9
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+nm_getopt_hexdump/919 (nm_getopt_hexdump)
+  Type: function definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: flags_handler/921 (addr) flags_handler/921 (addr) 
+  Read from file: build/obj/nm_getopt.o
+  Availability: available
+  Unit id: 9
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+nm_getopt_section/918 (nm_getopt_section)
+  Type: function definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: flags_handler/921 (addr) flags_handler/921 (addr) 
+  Read from file: build/obj/nm_getopt.o
+  Availability: available
+  Unit id: 9
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+nm_getopt_phdr/917 (nm_getopt_phdr)
+  Type: function definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: flags_handler/921 (addr) flags_handler/921 (addr) 
+  Read from file: build/obj/nm_getopt.o
+  Availability: available
+  Unit id: 9
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+nm_getopt_ehdr/916 (nm_getopt_ehdr)
+  Type: function definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: flags_handler/921 (addr) flags_handler/921 (addr) 
+  Read from file: build/obj/nm_getopt.o
+  Availability: available
+  Unit id: 9
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+nm_getopt_test/915 (nm_getopt_test)
+  Type: function definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: flags_handler/921 (addr) 
+  Read from file: build/obj/nm_getopt.o
+  Availability: available
+  Unit id: 9
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+nm_getopt_config/914 (nm_getopt_config)
+  Type: function definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: flags_handler/921 (addr) flags_handler/921 (addr) 
+  Read from file: build/obj/nm_getopt.o
+  Availability: available
+  Unit id: 9
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+nm_getopt_nm/912 (nm_getopt_nm)
+  Type: function definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: flags_handler/921 (addr) 
+  Read from file: build/obj/nm_getopt.o
+  Availability: available
+  Unit id: 9
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+nm_getopt_outfile/911 (nm_getopt_outfile)
+  Type: function definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: flags_handler/921 (addr) flags_handler/921 (addr) 
+  Read from file: build/obj/nm_getopt.o
+  Availability: available
+  Unit id: 9
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+fstat/822 (fstat)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Unit id: 8
+  Function flags:
+  Called by: nm_bin_load/818 (790703480 (estimated locally),0.74 per call) 
+  Calls: 
+mmap/824 (mmap)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Unit id: 8
+  Function flags:
+  Called by: nm_bin_load/818 (278880105 (estimated locally),0.26 per call) 
+  Calls: 
+nm/820 (nm)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  References: 
+  Referring: 
+  Read from file: build/obj/nm.o
+  Availability: available
+  Unit id: 8
+  Function flags: count:120193876 (estimated locally)
+  Called by: main/58 (354334800 (estimated locally),0.33 per call) 
+  Calls: nm_clean.part.0/839 (64267665 (estimated locally),0.53 per call) nm_bin/124 (315357972 (estimated locally),2.62 per call) nm_bin_load/818 (955630225 (estimated locally),7.95 per call) write/728 (315357972 (estimated locally),2.62 per call) __printf_chk/244 (315357972 (estimated locally),2.62 per call) write/728 (315357972 (estimated locally),2.62 per call) memset/333 (955630224 (estimated locally),7.95 per call) 
+nm_clean/819 (nm_clean)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  References: 
+  Referring: 
+  Read from file: build/obj/nm.o
+  Availability: available
+  Unit id: 8
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: nm_clean.part.0/839 (574129752 (estimated locally),0.53 per call) 
+nm_bin_load/818 (nm_bin_load)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  References: 
+  Referring: 
+  Read from file: build/obj/nm.o
+  Availability: available
+  Unit id: 8
+  Function flags: count:1073741823 (estimated locally)
+  Called by: nm/820 (955630225 (estimated locally),7.95 per call) 
+  Calls: close/730 (228430694 (estimated locally),0.21 per call) err_return/974 (50449411 (estimated locally),0.05 per call) close/730 (50449411 (estimated locally),0.05 per call) mmap/824 (278880105 (estimated locally),0.26 per call) err_return/974 (143665511 (estimated locally),0.13 per call) close/730 (143665511 (estimated locally),0.13 per call) err_return/974 (208119481 (estimated locally),0.19 per call) close/730 (208119481 (estimated locally),0.19 per call) err_return/974 (160038383 (estimated locally),0.15 per call) close/730 (160038383 (estimated locally),0.15 per call) fstat/822 (790703480 (estimated locally),0.74 per call) err_return/974 (283038344 (estimated locally),0.26 per call) *open/736 (1073741823 (estimated locally),1.00 per call) 
+nm_clean.part.0/839 (nm_clean.part.0)
+  Type: function definition analyzed
+  Visibility: semantic_interposition artificial
+  References: default_del/137 (addr) 
+  Referring: 
+  Read from file: build/obj/nm.o
+  Availability: local
+  Unit id: 8
+  Function flags: count:1073741824 (estimated locally) local split_part
+  Called by: nm/820 (64267665 (estimated locally),0.53 per call) nm_clean/819 (574129752 (estimated locally),0.53 per call) 
+  Calls: ft_lstdel/136 (1073741824 (estimated locally),1.00 per call) 
+*open/736 (__open_alias)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Unit id: 7
+  Function flags:
+  Called by: nm_bin_load/818 (1073741823 (estimated locally),1.00 per call) nm_bin_write/727 (1031006897 (estimated locally),0.96 per call) 
+  Calls: 
+close/730 (close)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Unit id: 7
+  Function flags:
+  Called by: nm_bin_load/818 (160038383 (estimated locally),0.15 per call) nm_bin_load/818 (208119481 (estimated locally),0.19 per call) nm_bin_load/818 (143665511 (estimated locally),0.13 per call) nm_bin_load/818 (50449411 (estimated locally),0.05 per call) nm_bin_load/818 (228430694 (estimated locally),0.21 per call) nm_bin_write/727 (1016572802 (estimated locally),0.95 per call) 
+  Calls: 
+lseek/729 (lseek)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Unit id: 7
+  Function flags:
+  Called by: nm_bin_write32.part.0/738 (118111600 (estimated locally),1.00 per call) nm_bin_write32.part.0/738 (510975480 (estimated locally),4.33 per call) nm_bin_write32.part.0/738 (118111600 (estimated locally),1.00 per call) nm_bin_write64.part.0/737 (118111600 (estimated locally),1.00 per call) nm_bin_write64.part.0/737 (510975480 (estimated locally),4.33 per call) nm_bin_write64.part.0/737 (118111600 (estimated locally),1.00 per call) 
+  Calls: 
+write/728 (write)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Unit id: 7
+  Function flags:
+  Called by: nm/820 (315357972 (estimated locally),2.62 per call) nm/820 (315357972 (estimated locally),2.62 per call) nm_bin_write32.part.0/738 (118111600 (estimated locally),1.00 per call) nm_bin_write32.part.0/738 (510975480 (estimated locally),4.33 per call) nm_bin_write32.part.0/738 (510975480 (estimated locally),4.33 per call) nm_bin_write32.part.0/738 (510975480 (estimated locally),4.33 per call) nm_bin_write64.part.0/737 (118111600 (estimated locally),1.00 per call) nm_bin_write64.part.0/737 (510975480 (estimated locally),4.33 per call) nm_bin_write64.part.0/737 (510975480 (estimated locally),4.33 per call) nm_bin_write64.part.0/737 (510975480 (estimated locally),4.33 per call) 
+  Calls: 
+nm_bin_write/727 (nm_bin_write)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  References: 
+  Referring: 
+  Read from file: build/obj/nm_bin_write.o
+  Availability: available
+  Unit id: 7
+  Function flags: count:1073741824 (estimated locally)
+  Called by: nm_bin_injection.part.0/138 (1073741824 (estimated locally),1.00 per call) 
+  Calls: close/730 (1016572802 (estimated locally),0.95 per call) nm_bin_write64.part.0/737 (670938046 (estimated locally),0.62 per call) nm_bin_write32.part.0/738 (345634756 (estimated locally),0.32 per call) *open/736 (1031006897 (estimated locally),0.96 per call) 
+nm_bin_write32/726 (nm_bin_write32)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  References: 
+  Referring: 
+  Read from file: build/obj/nm_bin_write.o
+  Availability: available
+  Unit id: 7
+  Function flags: count:220893212 (estimated locally)
+  Called by: 
+  Calls: nm_bin_write32.part.0/738 (118111600 (estimated locally),0.53 per call) 
+nm_bin_write64/725 (nm_bin_write64)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  References: 
+  Referring: 
+  Read from file: build/obj/nm_bin_write.o
+  Availability: available
+  Unit id: 7
+  Function flags: count:220893212 (estimated locally)
+  Called by: 
+  Calls: nm_bin_write64.part.0/737 (118111600 (estimated locally),0.53 per call) 
+nm_bin_write32.part.0/738 (nm_bin_write32.part.0)
+  Type: function definition analyzed
+  Visibility: semantic_interposition artificial
+  References: 
+  Referring: 
+  Read from file: build/obj/nm_bin_write.o
+  Availability: local
+  Unit id: 7
+  Function flags: count:118111600 (estimated locally) local split_part
+  Called by: nm_bin_write/727 (345634756 (estimated locally),0.32 per call) nm_bin_write32/726 (118111600 (estimated locally),0.53 per call) 
+  Calls: write/728 (118111600 (estimated locally),1.00 per call) lseek/729 (118111600 (estimated locally),1.00 per call) write/728 (510975480 (estimated locally),4.33 per call) lseek/729 (510975480 (estimated locally),4.33 per call) write/728 (510975480 (estimated locally),4.33 per call) lseek/729 (118111600 (estimated locally),1.00 per call) write/728 (510975480 (estimated locally),4.33 per call) 
+nm_bin_write64.part.0/737 (nm_bin_write64.part.0)
+  Type: function definition analyzed
+  Visibility: semantic_interposition artificial
+  References: 
+  Referring: 
+  Read from file: build/obj/nm_bin_write.o
+  Availability: local
+  Unit id: 7
+  Function flags: count:118111600 (estimated locally) local split_part
+  Called by: nm_bin_write/727 (670938046 (estimated locally),0.62 per call) nm_bin_write64/725 (118111600 (estimated locally),0.53 per call) 
+  Calls: write/728 (118111600 (estimated locally),1.00 per call) lseek/729 (118111600 (estimated locally),1.00 per call) write/728 (510975480 (estimated locally),4.33 per call) lseek/729 (510975480 (estimated locally),4.33 per call) write/728 (510975480 (estimated locally),4.33 per call) lseek/729 (118111600 (estimated locally),1.00 per call) write/728 (510975480 (estimated locally),4.33 per call) 
+malloc/643 (malloc)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Unit id: 6
+  Function flags: decl_is_malloc
+  Called by: inject_shdr64/638 (114037077 (estimated locally),0.97 per call) 
+  Calls: 
+__builtin_dynamic_object_size/645 (__builtin_dynamic_object_size)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Unit id: 6
+  Function flags:
+  Called by: inject_shdr64/638 (113991462 (estimated locally),0.97 per call) 
+  Calls: 
+__memset_chk/646 (__builtin___memset_chk)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Unit id: 6
+  Function flags:
+  Called by: inject_shdr64/638 (113991462 (estimated locally),0.97 per call) 
+  Calls: 
+nm_bin_transform_silvio_injection/640 (nm_bin_transform_silvio_injection)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  References: 
+  Referring: 
+  Read from file: build/obj/nm_bin_transform.o
+  Availability: available
+  Unit id: 6
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+nm_bin_transform/636 (nm_bin_transform)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  References: 
+  Referring: 
+  Read from file: build/obj/nm_bin_transform.o
+  Availability: available
+  Unit id: 6
+  Function flags: count:1073741823 (estimated locally)
+  Called by: 
+  Calls: nm_bin_transform_section_injection/639 (257174049 (estimated locally),0.24 per call) 
+nm_bin_transform_section_injection/639 (nm_bin_transform_section_injection)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  References: 
+  Referring: 
+  Read from file: build/obj/nm_bin_transform.o
+  Availability: available
+  Unit id: 6
+  Function flags: count:1073741823 (estimated locally)
+  Called by: nm_bin_transform/636 (257174049 (estimated locally),0.24 per call) 
+  Calls: nm_bin_transform_section_injection.part.0/657 (514348098 (estimated locally),0.48 per call) 
+__func__.0/648 (__func__)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly artificial
+  References: 
+  Referring: nm_bin_transform_section_injection.part.0/657 (addr) 
+  Read from file: build/obj/nm_bin_transform.o
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+nm_bin_transform_section_injection.part.0/657 (nm_bin_transform_section_injection.part.0)
+  Type: function definition analyzed
+  Visibility: semantic_interposition artificial
+  References: stderr/245 (read) __func__.0/648 (addr) 
+  Referring: 
+  Read from file: build/obj/nm_bin_transform.o
+  Availability: local
+  Unit id: 6
+  Function flags: count:1073741824 (estimated locally) local split_part
+  Called by: nm_bin_transform_section_injection/639 (514348098 (estimated locally),0.48 per call) 
+  Calls: __fprintf_chk/246 (1073741824 (estimated locally),1.00 per call) inject_shdr64/638 (1073741824 (estimated locally),1.00 per call) 
+__func__.1/642 (__func__)
+  Type: variable definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly artificial
+  References: 
+  Referring: inject_shdr64/638 (addr) inject_shdr64/638 (addr) inject_shdr64/638 (addr) inject_shdr64/638 (addr) inject_shdr64/638 (addr) inject_shdr64/638 (addr) inject_shdr64/638 (addr) inject_shdr64/638 (addr) 
+  Read from file: build/obj/nm_bin_transform.o
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+inject_shdr64/638 (inject_shdr64)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  References: stderr/245 (read) __func__.1/642 (addr) stderr/245 (read) __func__.1/642 (addr) stderr/245 (read) __func__.1/642 (addr) stderr/245 (read) __func__.1/642 (addr) stderr/245 (read) __func__.1/642 (addr) stderr/245 (read) __func__.1/642 (addr) stderr/245 (read) __func__.1/642 (addr) stderr/245 (read) __func__.1/642 (addr) 
+  Referring: 
+  Read from file: build/obj/nm_bin_transform.o
+  Availability: available
+  Unit id: 6
+  Function flags: count:118111600 (estimated locally)
+  Called by: nm_bin_transform_section_injection.part.0/657 (1073741824 (estimated locally),1.00 per call) 
+  Calls: __fprintf_chk/246 (109454603 (estimated locally),0.93 per call) ft_lstnew/250 (186672421 (estimated locally),1.58 per call) __fprintf_chk/246 (113991464 (estimated locally),0.97 per call) __fprintf_chk/246 (213050047 (estimated locally),1.80 per call) __fprintf_chk/246 (113991462 (estimated locally),0.97 per call) __memset_chk/646 (113991462 (estimated locally),0.97 per call) __builtin_dynamic_object_size/645 (113991462 (estimated locally),0.97 per call) __fprintf_chk/246 (113991462 (estimated locally),0.97 per call) malloc/643 (114037077 (estimated locally),0.97 per call) __fprintf_chk/246 (114037077 (estimated locally),0.97 per call) __fprintf_chk/246 (116056459 (estimated locally),0.98 per call) __fprintf_chk/246 (118111600 (estimated locally),1.00 per call) 
+nm_bin_transform_codecave_injection/637 (nm_bin_transform_codecave_injection)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  References: 
+  Referring: 
+  Read from file: build/obj/nm_bin_transform.o
+  Availability: available
+  Unit id: 6
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: 
+nm_bin_test/560 (nm_bin_test)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  References: 
+  Referring: 
+  Read from file: build/obj/nm_bin_test.o
+  Availability: available
+  Unit id: 5
+  Function flags: count:118111600 (estimated locally)
+  Called by: nm_bin/124 (177167400 (estimated locally),0.16 per call) 
+  Calls: nm_bin_dump_nm/234 (955630225 (estimated locally),8.09 per call) nm_bin_parse/120 (955630225 (estimated locally),8.09 per call) 
+nm_bin_parse_syms/484 (nm_bin_parse_syms)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  References: 
+  Referring: 
+  Read from file: build/obj/nm_bin_parse.o
+  Availability: available
+  Unit id: 4
+  Function flags: count:1073741824 (estimated locally)
+  Called by: nm_bin_parse/120 (275991376 (estimated locally),0.26 per call) 
+  Calls: nm_bin_parse_syms64/481 (348169376 (estimated locally),0.32 per call) nm_bin_parse_syms32/482 (179359984 (estimated locally),0.17 per call) nm_bin_get_sym_sections/483 (1055058721 (estimated locally),0.98 per call) 
+nm_bin_parse_syms32/482 (nm_bin_parse_syms32)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  References: stderr/245 (read) stderr/245 (read) stderr/245 (read) stderr/245 (read) 
+  Referring: 
+  Read from file: build/obj/nm_bin_parse.o
+  Availability: available
+  Unit id: 4
+  Function flags: count:149579526 (estimated locally)
+  Called by: nm_bin_parse_syms/484 (179359984 (estimated locally),0.17 per call) 
+  Calls: ft_lstpush/251 (82678120 (estimated locally),0.55 per call) __fprintf_chk/246 (35433480 (estimated locally),0.24 per call) ft_lstnew/250 (118111600 (estimated locally),0.79 per call) __fprintf_chk/246 (113981538 (estimated locally),0.76 per call) __fprintf_chk/246 (72911440 (estimated locally),0.49 per call) __fprintf_chk/246 (206033302 (estimated locally),1.38 per call) 
+nm_bin_parse_syms64/481 (nm_bin_parse_syms64)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  References: stderr/245 (read) stderr/245 (read) stderr/245 (read) stderr/245 (read) 
+  Referring: 
+  Read from file: build/obj/nm_bin_parse.o
+  Availability: available
+  Unit id: 4
+  Function flags: count:149579526 (estimated locally)
+  Called by: nm_bin_parse_syms/484 (348169376 (estimated locally),0.32 per call) 
+  Calls: ft_lstpush/251 (82678120 (estimated locally),0.55 per call) __fprintf_chk/246 (35433480 (estimated locally),0.24 per call) ft_lstnew/250 (118111600 (estimated locally),0.79 per call) __fprintf_chk/246 (113981538 (estimated locally),0.76 per call) __fprintf_chk/246 (72911440 (estimated locally),0.49 per call) __fprintf_chk/246 (206033302 (estimated locally),1.38 per call) 
+nm_bin_parse_shdr/480 (nm_bin_parse_shdr)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  References: 
+  Referring: 
+  Read from file: build/obj/nm_bin_parse.o
+  Availability: available
+  Unit id: 4
+  Function flags: count:1073741824 (estimated locally)
+  Called by: nm_bin_parse/120 (116930483 (estimated locally),0.11 per call) 
+  Calls: nm_bin_parse_shdr_64/479 (708669601 (estimated locally),0.66 per call) nm_bin_parse_shdr_32/478 (365072224 (estimated locally),0.34 per call) 
+nm_bin_parse_shdr_64/479 (nm_bin_parse_shdr_64)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  References: stderr/245 (read) stderr/245 (read) stderr/245 (read) 
+  Referring: 
+  Read from file: build/obj/nm_bin_parse.o
+  Availability: available
+  Unit id: 4
+  Function flags: count:114863530 (estimated locally)
+  Called by: nm_bin_parse_shdr/480 (708669601 (estimated locally),0.66 per call) 
+  Calls: __fprintf_chk/246 (792558 (estimated locally),0.01 per call) ft_lstpush/251 (316429836 (estimated locally),2.75 per call) __fprintf_chk/246 (55153720 (estimated locally),0.48 per call) ft_lstnew/250 (316429836 (estimated locally),2.75 per call) __fprintf_chk/246 (316429836 (estimated locally),2.75 per call) 
+nm_bin_parse_shdr_32/478 (nm_bin_parse_shdr_32)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  References: stderr/245 (read) stderr/245 (read) stderr/245 (read) 
+  Referring: 
+  Read from file: build/obj/nm_bin_parse.o
+  Availability: available
+  Unit id: 4
+  Function flags: count:114863530 (estimated locally)
+  Called by: nm_bin_parse_shdr/480 (365072224 (estimated locally),0.34 per call) 
+  Calls: __fprintf_chk/246 (792558 (estimated locally),0.01 per call) ft_lstpush/251 (316429836 (estimated locally),2.75 per call) __fprintf_chk/246 (55153720 (estimated locally),0.48 per call) ft_lstnew/250 (316429836 (estimated locally),2.75 per call) __fprintf_chk/246 (316429836 (estimated locally),2.75 per call) 
+nm_bin_parse_phdr/477 (nm_bin_parse_phdr)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  References: 
+  Referring: 
+  Read from file: build/obj/nm_bin_parse.o
+  Availability: available
+  Unit id: 4
+  Function flags: count:1073741824 (estimated locally)
+  Called by: nm_bin_parse/120 (354334800 (estimated locally),0.33 per call) 
+  Calls: nm_bin_parse_phdr_64/476 (708669601 (estimated locally),0.66 per call) nm_bin_parse_phdr_32/475 (365072224 (estimated locally),0.34 per call) 
+nm_bin_parse_phdr_64/476 (nm_bin_parse_phdr_64)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  References: stderr/245 (read) stderr/245 (read) 
+  Referring: 
+  Read from file: build/obj/nm_bin_parse.o
+  Availability: available
+  Unit id: 4
+  Function flags: count:114863530 (estimated locally)
+  Called by: nm_bin_parse_phdr/477 (708669601 (estimated locally),0.66 per call) 
+  Calls: ft_lstpush/251 (958878297 (estimated locally),8.35 per call) __fprintf_chk/246 (167132487 (estimated locally),1.46 per call) ft_lstnew/250 (958878296 (estimated locally),8.35 per call) __fprintf_chk/246 (316429836 (estimated locally),2.75 per call) 
+nm_bin_parse_phdr_32/475 (nm_bin_parse_phdr_32)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  References: stderr/245 (read) stderr/245 (read) 
+  Referring: 
+  Read from file: build/obj/nm_bin_parse.o
+  Availability: available
+  Unit id: 4
+  Function flags: count:114863530 (estimated locally)
+  Called by: nm_bin_parse_phdr/477 (365072224 (estimated locally),0.34 per call) 
+  Calls: ft_lstpush/251 (958878297 (estimated locally),8.35 per call) __fprintf_chk/246 (167132487 (estimated locally),1.46 per call) ft_lstnew/250 (958878296 (estimated locally),8.35 per call) __fprintf_chk/246 (316429836 (estimated locally),2.75 per call) 
+nm_bin_parse_ehdr/474 (nm_bin_parse_ehdr)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  References: stderr/245 (read) stderr/245 (read) stderr/245 (read) stderr/245 (read) stderr/245 (read) stderr/245 (read) stderr/245 (read) stderr/245 (read) stderr/245 (read) 
+  Referring: 
+  Read from file: build/obj/nm_bin_parse.o
+  Availability: available
+  Unit id: 4
+  Function flags: count:1073741823 (estimated locally)
+  Called by: nm_bin_parse/120 (1073741824 (estimated locally),1.00 per call) 
+  Calls: nm_bin_parse64_ehdr/472 (646958654 (estimated locally),0.60 per call) nm_bin_parse32_ehdr/473 (333281736 (estimated locally),0.31 per call) __fprintf_chk/246 (5526418 (estimated locally),0.01 per call) __fprintf_chk/246 (8017431 (estimated locally),0.01 per call) __fprintf_chk/246 (8133743 (estimated locally),0.01 per call) __fprintf_chk/246 (11075492 (estimated locally),0.01 per call) __fprintf_chk/246 (11291153 (estimated locally),0.01 per call) __fprintf_chk/246 (11511013 (estimated locally),0.01 per call) __fprintf_chk/246 (11735155 (estimated locally),0.01 per call) __fprintf_chk/246 (6206119 (estimated locally),0.01 per call) __fprintf_chk/246 (453129784 (estimated locally),0.42 per call) 
+nm_bin_get_sym_sections/483 (nm_bin_get_sym_sections)
+  Type: function definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly
+  References: 
+  Referring: 
+  Read from file: build/obj/nm_bin_parse.o
+  Availability: local
+  Unit id: 4
+  Function flags: count:118111600 (estimated locally) local
+  Called by: nm_bin_parse_syms/484 (1055058721 (estimated locally),0.98 per call) 
+  Calls: __printf_chk/244 (507880 (estimated locally),0.00 per call) 
+nm_bin_parse32_ehdr/473 (nm_bin_parse32_ehdr)
+  Type: function definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly
+  References: stderr/245 (read) stderr/245 (read) stderr/245 (read) stderr/245 (read) 
+  Referring: 
+  Read from file: build/obj/nm_bin_parse.o
+  Availability: local
+  Unit id: 4
+  Function flags: count:1073741824 (estimated locally) local
+  Called by: nm_bin_parse_ehdr/474 (333281736 (estimated locally),0.31 per call) 
+  Calls: __fprintf_chk/246 (10418504 (estimated locally),0.01 per call) __fprintf_chk/246 (10523741 (estimated locally),0.01 per call) __fprintf_chk/246 (10630042 (estimated locally),0.01 per call) __fprintf_chk/246 (10737416 (estimated locally),0.01 per call) 
+nm_bin_parse64_ehdr/472 (nm_bin_parse64_ehdr)
+  Type: function definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly
+  References: stderr/245 (read) stderr/245 (read) stderr/245 (read) stderr/245 (read) 
+  Referring: 
+  Read from file: build/obj/nm_bin_parse.o
+  Availability: local
+  Unit id: 4
+  Function flags: count:1073741824 (estimated locally) local
+  Called by: nm_bin_parse_ehdr/474 (646958654 (estimated locally),0.60 per call) 
+  Calls: __fprintf_chk/246 (10418504 (estimated locally),0.01 per call) __fprintf_chk/246 (10523741 (estimated locally),0.01 per call) __fprintf_chk/246 (10630042 (estimated locally),0.01 per call) __fprintf_chk/246 (10737416 (estimated locally),0.01 per call) 
+puts/398 (__builtin_puts)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Unit id: 3
+  Function flags:
+  Called by: nm_bin_dump_phdr.part.0/397 (1073741823 (estimated locally),1.00 per call) 
+  Calls: 
+putchar/399 (__builtin_putchar)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Unit id: 3
+  Function flags:
+  Called by: nm_bin_dump_phdr.part.0/397 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+ft_lstiter/247 (ft_lstiter)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Unit id: 3
+  Function flags:
+  Called by: nm_bin_dump_syms/243 (708669601 (estimated locally),0.66 per call) nm_bin_dump_syms/243 (365072224 (estimated locally),0.34 per call) nm_bin_dump_shdr/240 (708669601 (estimated locally),0.66 per call) nm_bin_dump_shdr/240 (365072224 (estimated locally),0.34 per call) nm_bin_dump_nm/234 (599491539 (estimated locally),0.56 per call) nm_bin_dump_phdr.part.0/397 (255550558 (estimated locally),0.24 per call) nm_bin_dump_phdr.part.0/397 (496068721 (estimated locally),0.46 per call) nm_bin_dump_nm.part.0/391 (751619281 (estimated locally),0.70 per call) 
+  Calls: 
+memset/333 (__builtin_memset)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Unit id: 3
+  Function flags:
+  Called by: nm/820 (955630224 (estimated locally),7.95 per call) nm_bin_dump_syms64/242 (401890828 (estimated locally),0.37 per call) nm_bin_dump_syms32/241 (401890828 (estimated locally),0.37 per call) 
+  Calls: 
+memcpy/332 (__builtin_memcpy)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Unit id: 3
+  Function flags:
+  Called by: nm_bin_dump_syms64/242 (50236354 (estimated locally),0.05 per call) nm_bin_dump_syms64/242 (50236354 (estimated locally),0.05 per call) nm_bin_dump_syms64/242 (50236354 (estimated locally),0.05 per call) nm_bin_dump_syms64/242 (50236354 (estimated locally),0.05 per call) nm_bin_dump_syms64/242 (50236354 (estimated locally),0.05 per call) nm_bin_dump_syms64/242 (50236354 (estimated locally),0.05 per call) nm_bin_dump_syms64/242 (50236354 (estimated locally),0.05 per call) nm_bin_dump_syms64/242 (50236354 (estimated locally),0.05 per call) nm_bin_dump_syms64/242 (100472707 (estimated locally),0.09 per call) nm_bin_dump_syms64/242 (100472707 (estimated locally),0.09 per call) nm_bin_dump_syms64/242 (100472707 (estimated locally),0.09 per call) nm_bin_dump_syms64/242 (100472707 (estimated locally),0.09 per call) nm_bin_dump_syms32/241 (50236354 (estimated locally),0.05 per call) nm_bin_dump_syms32/241 (50236354 (estimated locally),0.05 per call) nm_bin_dump_syms32/241 (50236354 (estimated locally),0.05 per call) nm_bin_dump_syms32/241 (50236354 (estimated locally),0.05 per call) nm_bin_dump_syms32/241 (50236354 (estimated locally),0.05 per call) nm_bin_dump_syms32/241 (50236354 (estimated locally),0.05 per call) nm_bin_dump_syms32/241 (50236354 (estimated locally),0.05 per call) nm_bin_dump_syms32/241 (50236354 (estimated locally),0.05 per call) nm_bin_dump_syms32/241 (100472707 (estimated locally),0.09 per call) nm_bin_dump_syms32/241 (100472707 (estimated locally),0.09 per call) nm_bin_dump_syms32/241 (100472707 (estimated locally),0.09 per call) nm_bin_dump_syms32/241 (100472707 (estimated locally),0.09 per call) 
+  Calls: 
+strcmp/252 (strcmp)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Unit id: 3
+  Function flags:
+  Called by: nm_getopt/922 (1014686025 (estimated locally),114.10 per call) sort_symbols64/229 (955630225 (estimated locally),65.46 per call) sort_symbols32/230 (955630225 (estimated locally),65.46 per call) 
+  Calls: 
+ft_lstnew/250 (ft_lstnew)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Unit id: 3
+  Function flags:
+  Called by: nm_getopt/922 (899993 (estimated locally),0.10 per call) nm_getopt/922 (28695331 (estimated locally),3.23 per call) inject_shdr64/638 (186672421 (estimated locally),1.58 per call) nm_bin_parse_phdr_32/475 (958878296 (estimated locally),8.35 per call) nm_bin_parse_phdr_64/476 (958878296 (estimated locally),8.35 per call) nm_bin_parse_shdr_32/478 (316429836 (estimated locally),2.75 per call) nm_bin_parse_shdr_64/479 (316429836 (estimated locally),2.75 per call) nm_bin_parse_syms64/481 (118111600 (estimated locally),0.79 per call) nm_bin_parse_syms32/482 (118111600 (estimated locally),0.79 per call) sort_symbols64/229 (17228952 (estimated locally),1.18 per call) sort_symbols64/229 (67453534 (estimated locally),4.62 per call) sort_symbols32/230 (17228952 (estimated locally),1.18 per call) sort_symbols32/230 (67453534 (estimated locally),4.62 per call) 
+  Calls: 
+ft_lstpush/251 (ft_lstpush)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Unit id: 3
+  Function flags:
+  Called by: nm_getopt/922 (899993 (estimated locally),0.10 per call) nm_getopt/922 (28695331 (estimated locally),3.23 per call) nm_bin_parse_phdr_32/475 (958878297 (estimated locally),8.35 per call) nm_bin_parse_phdr_64/476 (958878297 (estimated locally),8.35 per call) nm_bin_parse_shdr_32/478 (316429836 (estimated locally),2.75 per call) nm_bin_parse_shdr_64/479 (316429836 (estimated locally),2.75 per call) nm_bin_parse_syms64/481 (82678120 (estimated locally),0.55 per call) nm_bin_parse_syms32/482 (82678120 (estimated locally),0.55 per call) sort_symbols64/229 (59206135 (estimated locally),4.06 per call) sort_symbols32/230 (59206135 (estimated locally),4.06 per call) 
+  Calls: 
+__fprintf_chk/246 (__fprintf_chk)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Unit id: 3
+  Function flags:
+  Called by: inject_shdr64/638 (118111600 (estimated locally),1.00 per call) inject_shdr64/638 (116056459 (estimated locally),0.98 per call) inject_shdr64/638 (114037077 (estimated locally),0.97 per call) inject_shdr64/638 (113991462 (estimated locally),0.97 per call) inject_shdr64/638 (113991462 (estimated locally),0.97 per call) inject_shdr64/638 (213050047 (estimated locally),1.80 per call) inject_shdr64/638 (113991464 (estimated locally),0.97 per call) inject_shdr64/638 (109454603 (estimated locally),0.93 per call) nm_bin_transform_section_injection.part.0/657 (1073741824 (estimated locally),1.00 per call) nm_bin_parse64_ehdr/472 (10737416 (estimated locally),0.01 per call) nm_bin_parse64_ehdr/472 (10630042 (estimated locally),0.01 per call) nm_bin_parse64_ehdr/472 (10523741 (estimated locally),0.01 per call) nm_bin_parse64_ehdr/472 (10418504 (estimated locally),0.01 per call) nm_bin_parse32_ehdr/473 (10737416 (estimated locally),0.01 per call) nm_bin_parse32_ehdr/473 (10630042 (estimated locally),0.01 per call) nm_bin_parse32_ehdr/473 (10523741 (estimated locally),0.01 per call) nm_bin_parse32_ehdr/473 (10418504 (estimated locally),0.01 per call) nm_bin_parse_ehdr/474 (453129784 (estimated locally),0.42 per call) nm_bin_parse_ehdr/474 (6206119 (estimated locally),0.01 per call) nm_bin_parse_ehdr/474 (11735155 (estimated locally),0.01 per call) nm_bin_parse_ehdr/474 (11511013 (estimated locally),0.01 per call) nm_bin_parse_ehdr/474 (11291153 (estimated locally),0.01 per call) nm_bin_parse_ehdr/474 (11075492 (estimated locally),0.01 per call) nm_bin_parse_ehdr/474 (8133743 (estimated locally),0.01 per call) nm_bin_parse_ehdr/474 (8017431 (estimated locally),0.01 per call) nm_bin_parse_ehdr/474 (5526418 (estimated locally),0.01 per call) nm_bin_parse_phdr_32/475 (316429836 (estimated locally),2.75 per call) nm_bin_parse_phdr_32/475 (167132487 (estimated locally),1.46 per call) nm_bin_parse_phdr_64/476 (316429836 (estimated locally),2.75 per call) nm_bin_parse_phdr_64/476 (167132487 (estimated locally),1.46 per call) nm_bin_parse_shdr_32/478 (316429836 (estimated locally),2.75 per call) nm_bin_parse_shdr_32/478 (55153720 (estimated locally),0.48 per call) nm_bin_parse_shdr_32/478 (792558 (estimated locally),0.01 per call) nm_bin_parse_shdr_64/479 (316429836 (estimated locally),2.75 per call) nm_bin_parse_shdr_64/479 (55153720 (estimated locally),0.48 per call) nm_bin_parse_shdr_64/479 (792558 (estimated locally),0.01 per call) nm_bin_parse_syms64/481 (206033302 (estimated locally),1.38 per call) nm_bin_parse_syms64/481 (72911440 (estimated locally),0.49 per call) nm_bin_parse_syms64/481 (113981538 (estimated locally),0.76 per call) nm_bin_parse_syms64/481 (35433480 (estimated locally),0.24 per call) nm_bin_parse_syms32/482 (206033302 (estimated locally),1.38 per call) nm_bin_parse_syms32/482 (72911440 (estimated locally),0.49 per call) nm_bin_parse_syms32/482 (113981538 (estimated locally),0.76 per call) nm_bin_parse_syms32/482 (35433480 (estimated locally),0.24 per call) nm_bin_dump_nm/234 (256924941 (estimated locally),0.24 per call) nm_bin_dump_phdr.part.0/397 (109521666 (estimated locally),0.10 per call) nm_bin_dump_phdr.part.0/397 (212600878 (estimated locally),0.20 per call) nm_bin_dump_nm.part.0/391 (322122544 (estimated locally),0.30 per call) nm_bin_dump_syms64/242 (200945414 (estimated locally),0.19 per call) nm_bin_dump_syms32/241 (200945414 (estimated locally),0.19 per call) nm_bin_dump_nm64/233 (316753840 (estimated locally),0.30 per call) nm_bin_dump_nm32/232 (316753840 (estimated locally),0.30 per call) sort_symbols64/229 (58905465 (estimated locally),4.04 per call) sort_symbols64/229 (7383836 (estimated locally),0.51 per call) sort_symbols32/230 (58905465 (estimated locally),4.04 per call) sort_symbols32/230 (7383836 (estimated locally),0.51 per call) 
+  Calls: 
+ft_lstdelone/248 (ft_lstdelone)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Unit id: 3
+  Function flags:
+  Called by: sort_symbols64/229 (58905465 (estimated locally),4.04 per call) sort_symbols64/229 (17228952 (estimated locally),1.18 per call) sort_symbols64/229 (67453534 (estimated locally),4.62 per call) sort_symbols64/229 (30118453 (estimated locally),2.06 per call) sort_symbols64/229 (118111578 (estimated locally),8.09 per call) sort_symbols64/229 (14598060 (estimated locally),1.00 per call) sort_symbols32/230 (58905465 (estimated locally),4.04 per call) sort_symbols32/230 (17228952 (estimated locally),1.18 per call) sort_symbols32/230 (67453534 (estimated locally),4.62 per call) sort_symbols32/230 (30118453 (estimated locally),2.06 per call) sort_symbols32/230 (118111578 (estimated locally),8.09 per call) sort_symbols32/230 (14598060 (estimated locally),1.00 per call) 
+  Calls: 
+__printf_chk/244 (__printf_chk)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Unit id: 3
+  Function flags:
+  Called by: print_addr/976 (955630225 (estimated locally),5.42 per call) print_addr/976 (176285970 (estimated locally),1.00 per call) print_info_lg/977 (1073741824 (estimated locally),1.00 per call) nm_getopt_help/913 (955630225 (estimated locally),8.09 per call) nm_printopt/923 (118111600 (estimated locally),1.00 per call) nm_printopt/923 (118111600 (estimated locally),1.00 per call) nm_printopt/923 (118111600 (estimated locally),1.00 per call) nm_printopt/923 (118111600 (estimated locally),1.00 per call) nm_printopt/923 (955630225 (estimated locally),8.09 per call) nm/820 (315357972 (estimated locally),2.62 per call) nm_bin_get_sym_sections/483 (507880 (estimated locally),0.00 per call) nm_bin_dump_syms/243 (1073741824 (estimated locally),1.00 per call) nm_bin_dump_syms/243 (708669601 (estimated locally),0.66 per call) nm_bin_dump_syms/243 (365072224 (estimated locally),0.34 per call) nm_bin_dump_syms/243 (1073741824 (estimated locally),1.00 per call) nm_bin_dump_shdr/240 (1073741824 (estimated locally),1.00 per call) nm_bin_dump_shdr/240 (708669601 (estimated locally),0.66 per call) nm_bin_dump_shdr/240 (365072224 (estimated locally),0.34 per call) nm_bin_dump_shdr/240 (1073741824 (estimated locally),1.00 per call) nm_bin_dump_ehdr/227 (1073741824 (estimated locally),1.00 per call) nm_bin_dump_ehdr/227 (708669601 (estimated locally),0.66 per call) nm_bin_dump_ehdr/227 (708669601 (estimated locally),0.66 per call) nm_bin_dump_ehdr/227 (708669601 (estimated locally),0.66 per call) nm_bin_dump_ehdr/227 (708669601 (estimated locally),0.66 per call) nm_bin_dump_ehdr/227 (708669601 (estimated locally),0.66 per call) nm_bin_dump_ehdr/227 (708669601 (estimated locally),0.66 per call) nm_bin_dump_ehdr/227 (708669601 (estimated locally),0.66 per call) nm_bin_dump_ehdr/227 (708669601 (estimated locally),0.66 per call) nm_bin_dump_ehdr/227 (708669601 (estimated locally),0.66 per call) nm_bin_dump_ehdr/227 (708669601 (estimated locally),0.66 per call) nm_bin_dump_ehdr/227 (708669601 (estimated locally),0.66 per call) nm_bin_dump_ehdr/227 (708669601 (estimated locally),0.66 per call) nm_bin_dump_ehdr/227 (708669601 (estimated locally),0.66 per call) nm_bin_dump_ehdr/227 (708669601 (estimated locally),0.66 per call) nm_bin_dump_ehdr/227 (365072224 (estimated locally),0.34 per call) nm_bin_dump_ehdr/227 (365072224 (estimated locally),0.34 per call) nm_bin_dump_ehdr/227 (365072224 (estimated locally),0.34 per call) nm_bin_dump_ehdr/227 (365072224 (estimated locally),0.34 per call) nm_bin_dump_ehdr/227 (365072224 (estimated locally),0.34 per call) nm_bin_dump_ehdr/227 (365072224 (estimated locally),0.34 per call) nm_bin_dump_ehdr/227 (365072224 (estimated locally),0.34 per call) nm_bin_dump_ehdr/227 (365072224 (estimated locally),0.34 per call) nm_bin_dump_ehdr/227 (365072224 (estimated locally),0.34 per call) nm_bin_dump_ehdr/227 (365072224 (estimated locally),0.34 per call) nm_bin_dump_ehdr/227 (365072224 (estimated locally),0.34 per call) nm_bin_dump_ehdr/227 (365072224 (estimated locally),0.34 per call) nm_bin_dump_ehdr/227 (365072224 (estimated locally),0.34 per call) nm_bin_dump_ehdr/227 (365072224 (estimated locally),0.34 per call) nm_bin_dump_ehdr/227 (1073741824 (estimated locally),1.00 per call) nm_bin_dump_phdr.part.0/397 (255550558 (estimated locally),0.24 per call) nm_bin_dump_phdr.part.0/397 (496068721 (estimated locally),0.46 per call) nm_bin_dump_syms64/242 (401890828 (estimated locally),0.37 per call) nm_bin_dump_syms64/242 (401890828 (estimated locally),0.37 per call) nm_bin_dump_syms64/242 (401890828 (estimated locally),0.37 per call) nm_bin_dump_syms64/242 (401890828 (estimated locally),0.37 per call) nm_bin_dump_syms64/242 (401890828 (estimated locally),0.37 per call) nm_bin_dump_syms64/242 (401890828 (estimated locally),0.37 per call) nm_bin_dump_syms64/242 (200945414 (estimated locally),0.19 per call) nm_bin_dump_syms64/242 (401890828 (estimated locally),0.37 per call) nm_bin_dump_syms32/241 (401890828 (estimated locally),0.37 per call) nm_bin_dump_syms32/241 (401890828 (estimated locally),0.37 per call) nm_bin_dump_syms32/241 (401890828 (estimated locally),0.37 per call) nm_bin_dump_syms32/241 (401890828 (estimated locally),0.37 per call) nm_bin_dump_syms32/241 (401890828 (estimated locally),0.37 per call) nm_bin_dump_syms32/241 (401890828 (estimated locally),0.37 per call) nm_bin_dump_syms32/241 (401890828 (estimated locally),0.37 per call) nm_bin_dump_syms32/241 (200945414 (estimated locally),0.19 per call) nm_bin_dump_syms32/241 (401890828 (estimated locally),0.37 per call) nm_bin_dump_nm64/233 (316753840 (estimated locally),0.30 per call) nm_bin_dump_nm64/233 (633507681 (estimated locally),0.59 per call) nm_bin_dump_nm64/233 (207471230 (estimated locally),0.19 per call) nm_bin_dump_nm64/233 (426036450 (estimated locally),0.40 per call) nm_bin_dump_nm32/232 (316753840 (estimated locally),0.30 per call) nm_bin_dump_nm32/232 (633507681 (estimated locally),0.59 per call) nm_bin_dump_nm32/232 (207471230 (estimated locally),0.19 per call) nm_bin_dump_nm32/232 (426036450 (estimated locally),0.40 per call) nm_bin_dump_shdr64/239 (401890828 (estimated locally),0.37 per call) nm_bin_dump_shdr64/239 (401890828 (estimated locally),0.37 per call) nm_bin_dump_shdr64/239 (401890828 (estimated locally),0.37 per call) nm_bin_dump_shdr64/239 (401890828 (estimated locally),0.37 per call) nm_bin_dump_shdr64/239 (401890828 (estimated locally),0.37 per call) nm_bin_dump_shdr64/239 (401890828 (estimated locally),0.37 per call) nm_bin_dump_shdr64/239 (401890828 (estimated locally),0.37 per call) nm_bin_dump_shdr64/239 (401890828 (estimated locally),0.37 per call) nm_bin_dump_shdr64/239 (401890828 (estimated locally),0.37 per call) nm_bin_dump_shdr64/239 (92836781 (estimated locally),0.09 per call) nm_bin_dump_shdr64/239 (401890828 (estimated locally),0.37 per call) nm_bin_dump_shdr64/239 (401890828 (estimated locally),0.37 per call) nm_bin_dump_shdr32/238 (401890828 (estimated locally),0.37 per call) nm_bin_dump_shdr32/238 (401890828 (estimated locally),0.37 per call) nm_bin_dump_shdr32/238 (401890828 (estimated locally),0.37 per call) nm_bin_dump_shdr32/238 (401890828 (estimated locally),0.37 per call) nm_bin_dump_shdr32/238 (401890828 (estimated locally),0.37 per call) nm_bin_dump_shdr32/238 (401890828 (estimated locally),0.37 per call) nm_bin_dump_shdr32/238 (401890828 (estimated locally),0.37 per call) nm_bin_dump_shdr32/238 (401890828 (estimated locally),0.37 per call) nm_bin_dump_shdr32/238 (401890828 (estimated locally),0.37 per call) nm_bin_dump_shdr32/238 (92836781 (estimated locally),0.09 per call) nm_bin_dump_shdr32/238 (401890828 (estimated locally),0.37 per call) nm_bin_dump_shdr32/238 (401890828 (estimated locally),0.37 per call) nm_bin_dump_phdr64/236 (401890828 (estimated locally),0.37 per call) nm_bin_dump_phdr64/236 (401890828 (estimated locally),0.37 per call) nm_bin_dump_phdr64/236 (401890828 (estimated locally),0.37 per call) nm_bin_dump_phdr64/236 (401890828 (estimated locally),0.37 per call) nm_bin_dump_phdr64/236 (401890828 (estimated locally),0.37 per call) nm_bin_dump_phdr64/236 (401890828 (estimated locally),0.37 per call) nm_bin_dump_phdr64/236 (134633428 (estimated locally),0.13 per call) nm_bin_dump_phdr64/236 (134633428 (estimated locally),0.13 per call) nm_bin_dump_phdr64/236 (132623973 (estimated locally),0.12 per call) nm_bin_dump_phdr64/236 (401890828 (estimated locally),0.37 per call) nm_bin_dump_phdr32/235 (401890828 (estimated locally),0.37 per call) nm_bin_dump_phdr32/235 (401890828 (estimated locally),0.37 per call) nm_bin_dump_phdr32/235 (401890828 (estimated locally),0.37 per call) nm_bin_dump_phdr32/235 (401890828 (estimated locally),0.37 per call) nm_bin_dump_phdr32/235 (401890828 (estimated locally),0.37 per call) nm_bin_dump_phdr32/235 (401890828 (estimated locally),0.37 per call) nm_bin_dump_phdr32/235 (401890828 (estimated locally),0.37 per call) nm_bin_dump_phdr32/235 (401890828 (estimated locally),0.37 per call) 
+  Calls: 
+nm_bin_dump_syms/243 (nm_bin_dump_syms)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  References: nm_bin_dump_syms32/241 (addr) nm_bin_dump_syms64/242 (addr) 
+  Referring: 
+  Read from file: build/obj/nm_bin_dump.o
+  Availability: available
+  Unit id: 3
+  Function flags: count:1073741824 (estimated locally)
+  Called by: nm_bin_dump/121 (354334800 (estimated locally),0.33 per call) 
+  Calls: __printf_chk/244 (1073741824 (estimated locally),1.00 per call) ft_lstiter/247 (708669601 (estimated locally),0.66 per call) __printf_chk/244 (708669601 (estimated locally),0.66 per call) ft_lstiter/247 (365072224 (estimated locally),0.34 per call) __printf_chk/244 (365072224 (estimated locally),0.34 per call) __printf_chk/244 (1073741824 (estimated locally),1.00 per call) 
+nm_bin_dump_shdr/240 (nm_bin_dump_shdr)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  References: nm_bin_dump_shdr32/238 (addr) nm_bin_dump_shdr64/239 (addr) 
+  Referring: 
+  Read from file: build/obj/nm_bin_dump.o
+  Availability: available
+  Unit id: 3
+  Function flags: count:1073741824 (estimated locally)
+  Called by: nm_bin_dump/121 (354334800 (estimated locally),0.33 per call) 
+  Calls: __printf_chk/244 (1073741824 (estimated locally),1.00 per call) ft_lstiter/247 (708669601 (estimated locally),0.66 per call) __printf_chk/244 (708669601 (estimated locally),0.66 per call) ft_lstiter/247 (365072224 (estimated locally),0.34 per call) __printf_chk/244 (365072224 (estimated locally),0.34 per call) __printf_chk/244 (1073741824 (estimated locally),1.00 per call) 
+nm_bin_dump_phdr/237 (nm_bin_dump_phdr)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  References: 
+  Referring: 
+  Read from file: build/obj/nm_bin_dump.o
+  Availability: available
+  Unit id: 3
+  Function flags: count:1073741823 (estimated locally)
+  Called by: nm_bin_dump/121 (354334800 (estimated locally),0.33 per call) 
+  Calls: nm_bin_dump_phdr.part.0/397 (574129751 (estimated locally),0.53 per call) 
+nm_bin_dump_nm/234 (nm_bin_dump_nm)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  References: nm_bin_dump_nm64/233 (addr) stderr/245 (read) 
+  Referring: 
+  Read from file: build/obj/nm_bin_dump.o
+  Availability: available
+  Unit id: 3
+  Function flags: count:1073741823 (estimated locally)
+  Called by: nm_bin_test/560 (955630225 (estimated locally),8.09 per call) nm_bin_dump/121 (354334800 (estimated locally),0.33 per call) 
+  Calls: __fprintf_chk/246 (256924941 (estimated locally),0.24 per call) ft_lstiter/247 (599491539 (estimated locally),0.56 per call) sort_symbols64/229 (599491539 (estimated locally),0.56 per call) nm_bin_dump_nm.part.0/391 (217325344 (estimated locally),0.20 per call) 
+nm_bin_dump_ehdr/227 (nm_bin_dump_ehdr)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  References: 
+  Referring: 
+  Read from file: build/obj/nm_bin_dump.o
+  Availability: available
+  Unit id: 3
+  Function flags: count:1073741824 (estimated locally)
+  Called by: nm_bin_dump/121 (354334800 (estimated locally),0.33 per call) 
+  Calls: __printf_chk/244 (1073741824 (estimated locally),1.00 per call) __printf_chk/244 (708669601 (estimated locally),0.66 per call) __printf_chk/244 (708669601 (estimated locally),0.66 per call) __printf_chk/244 (708669601 (estimated locally),0.66 per call) __printf_chk/244 (708669601 (estimated locally),0.66 per call) __printf_chk/244 (708669601 (estimated locally),0.66 per call) __printf_chk/244 (708669601 (estimated locally),0.66 per call) __printf_chk/244 (708669601 (estimated locally),0.66 per call) __printf_chk/244 (708669601 (estimated locally),0.66 per call) __printf_chk/244 (708669601 (estimated locally),0.66 per call) __printf_chk/244 (708669601 (estimated locally),0.66 per call) __printf_chk/244 (708669601 (estimated locally),0.66 per call) __printf_chk/244 (708669601 (estimated locally),0.66 per call) __printf_chk/244 (708669601 (estimated locally),0.66 per call) __printf_chk/244 (708669601 (estimated locally),0.66 per call) __printf_chk/244 (365072224 (estimated locally),0.34 per call) __printf_chk/244 (365072224 (estimated locally),0.34 per call) __printf_chk/244 (365072224 (estimated locally),0.34 per call) __printf_chk/244 (365072224 (estimated locally),0.34 per call) __printf_chk/244 (365072224 (estimated locally),0.34 per call) __printf_chk/244 (365072224 (estimated locally),0.34 per call) __printf_chk/244 (365072224 (estimated locally),0.34 per call) __printf_chk/244 (365072224 (estimated locally),0.34 per call) __printf_chk/244 (365072224 (estimated locally),0.34 per call) __printf_chk/244 (365072224 (estimated locally),0.34 per call) __printf_chk/244 (365072224 (estimated locally),0.34 per call) __printf_chk/244 (365072224 (estimated locally),0.34 per call) __printf_chk/244 (365072224 (estimated locally),0.34 per call) __printf_chk/244 (365072224 (estimated locally),0.34 per call) __printf_chk/244 (1073741824 (estimated locally),1.00 per call) 
+nm_bin_dump_phdr.part.0/397 (nm_bin_dump_phdr.part.0)
+  Type: function definition analyzed
+  Visibility: semantic_interposition artificial
+  References: nm_bin_dump_phdr32/235 (addr) stderr/245 (read) nm_bin_dump_phdr64/236 (addr) stderr/245 (read) 
+  Referring: 
+  Read from file: build/obj/nm_bin_dump.o
+  Availability: local
+  Unit id: 3
+  Function flags: count:1073741823 (estimated locally) local split_part
+  Called by: nm_bin_dump_phdr/237 (574129751 (estimated locally),0.53 per call) 
+  Calls: putchar/399 (1073741824 (estimated locally),1.00 per call) puts/398 (1073741823 (estimated locally),1.00 per call) __printf_chk/244 (255550558 (estimated locally),0.24 per call) ft_lstiter/247 (255550558 (estimated locally),0.24 per call) __fprintf_chk/246 (109521666 (estimated locally),0.10 per call) __printf_chk/244 (496068721 (estimated locally),0.46 per call) ft_lstiter/247 (496068721 (estimated locally),0.46 per call) __fprintf_chk/246 (212600878 (estimated locally),0.20 per call) 
+nm_bin_dump_nm.part.0/391 (nm_bin_dump_nm.part.0)
+  Type: function definition analyzed
+  Visibility: semantic_interposition artificial
+  References: nm_bin_dump_nm32/232 (addr) stderr/245 (read) 
+  Referring: 
+  Read from file: build/obj/nm_bin_dump.o
+  Availability: local
+  Unit id: 3
+  Function flags: count:1073741824 (estimated locally) local split_part
+  Called by: nm_bin_dump_nm/234 (217325344 (estimated locally),0.20 per call) 
+  Calls: sort_symbols32/230 (1073741824 (estimated locally),1.00 per call) ft_lstiter/247 (751619281 (estimated locally),0.70 per call) __fprintf_chk/246 (322122544 (estimated locally),0.30 per call) 
+nm_bin_dump_syms64/242 (nm_bin_dump_syms64)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  Address is taken.
+  References: stderr/245 (read) 
+  Referring: nm_bin_dump_syms/243 (addr) 
+  Read from file: build/obj/nm_bin_dump.o
+  Availability: available
+  Unit id: 3
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: __printf_chk/244 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) memcpy/332 (50236354 (estimated locally),0.05 per call) memcpy/332 (50236354 (estimated locally),0.05 per call) memcpy/332 (50236354 (estimated locally),0.05 per call) memcpy/332 (50236354 (estimated locally),0.05 per call) memcpy/332 (50236354 (estimated locally),0.05 per call) memcpy/332 (50236354 (estimated locally),0.05 per call) memcpy/332 (50236354 (estimated locally),0.05 per call) memcpy/332 (50236354 (estimated locally),0.05 per call) memset/333 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) memcpy/332 (100472707 (estimated locally),0.09 per call) memcpy/332 (100472707 (estimated locally),0.09 per call) memcpy/332 (100472707 (estimated locally),0.09 per call) memcpy/332 (100472707 (estimated locally),0.09 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (200945414 (estimated locally),0.19 per call) __fprintf_chk/246 (200945414 (estimated locally),0.19 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) 
+nm_bin_dump_syms32/241 (nm_bin_dump_syms32)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  Address is taken.
+  References: stderr/245 (read) 
+  Referring: nm_bin_dump_syms/243 (addr) 
+  Read from file: build/obj/nm_bin_dump.o
+  Availability: available
+  Unit id: 3
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: __printf_chk/244 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) memcpy/332 (50236354 (estimated locally),0.05 per call) memcpy/332 (50236354 (estimated locally),0.05 per call) memcpy/332 (50236354 (estimated locally),0.05 per call) memcpy/332 (50236354 (estimated locally),0.05 per call) memcpy/332 (50236354 (estimated locally),0.05 per call) memcpy/332 (50236354 (estimated locally),0.05 per call) memcpy/332 (50236354 (estimated locally),0.05 per call) memcpy/332 (50236354 (estimated locally),0.05 per call) memset/333 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) memcpy/332 (100472707 (estimated locally),0.09 per call) memcpy/332 (100472707 (estimated locally),0.09 per call) memcpy/332 (100472707 (estimated locally),0.09 per call) memcpy/332 (100472707 (estimated locally),0.09 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (200945414 (estimated locally),0.19 per call) __fprintf_chk/246 (200945414 (estimated locally),0.19 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) 
+nm_bin_dump_nm64/233 (nm_bin_dump_nm64)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  Address is taken.
+  References: stderr/245 (read) 
+  Referring: nm_bin_dump_nm/234 (addr) 
+  Read from file: build/obj/nm_bin_dump.o
+  Availability: available
+  Unit id: 3
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: __printf_chk/244 (316753840 (estimated locally),0.30 per call) __fprintf_chk/246 (316753840 (estimated locally),0.30 per call) __printf_chk/244 (633507681 (estimated locally),0.59 per call) nm_flag_magic/231 (633507681 (estimated locally),0.59 per call) __printf_chk/244 (207471230 (estimated locally),0.19 per call) __printf_chk/244 (426036450 (estimated locally),0.40 per call) 
+nm_bin_dump_nm32/232 (nm_bin_dump_nm32)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  Address is taken.
+  References: stderr/245 (read) 
+  Referring: nm_bin_dump_nm.part.0/391 (addr) 
+  Read from file: build/obj/nm_bin_dump.o
+  Availability: available
+  Unit id: 3
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: __printf_chk/244 (316753840 (estimated locally),0.30 per call) __fprintf_chk/246 (316753840 (estimated locally),0.30 per call) __printf_chk/244 (633507681 (estimated locally),0.59 per call) nm_flag_magic/231 (633507681 (estimated locally),0.59 per call) __printf_chk/244 (207471230 (estimated locally),0.19 per call) __printf_chk/244 (426036450 (estimated locally),0.40 per call) 
+nm_flag_magic/231 (nm_flag_magic)
+  Type: function definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly
+  References: 
+  Referring: 
+  Read from file: build/obj/nm_bin_dump.o
+  Availability: local
+  Unit id: 3
+  Function flags: count:1073741821 (estimated locally) local
+  Called by: nm_bin_dump_nm64/233 (633507681 (estimated locally),0.59 per call) nm_bin_dump_nm32/232 (633507681 (estimated locally),0.59 per call) 
+  Calls: nm_flag_magic.part.0/256 (256218073 (estimated locally),0.24 per call) 
+nm_flag_magic.part.0/256 (nm_flag_magic.part.0)
+  Type: function definition analyzed
+  Visibility: semantic_interposition artificial
+  References: 
+  Referring: 
+  Read from file: build/obj/nm_bin_dump.o
+  Availability: local
+  Unit id: 3
+  Function flags: count:1073741823 (estimated locally) local split_part
+  Called by: nm_flag_magic/231 (256218073 (estimated locally),0.24 per call) 
+  Calls: 
+sort_symbols64/229 (sort_symbols64)
+  Type: function definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly
+  References: default_del/137 (addr) default_del/137 (addr) default_del/137 (addr) default_del/137 (addr) stderr/245 (read) default_del/137 (addr) stderr/245 (read) default_del/137 (addr) 
+  Referring: 
+  Read from file: build/obj/nm_bin_dump.o
+  Availability: local
+  Unit id: 3
+  Function flags: count:14598060 (estimated locally) local
+  Called by: nm_bin_dump_nm/234 (599491539 (estimated locally),0.56 per call) 
+  Calls: ft_lstdelone/248 (58905465 (estimated locally),4.04 per call) __fprintf_chk/246 (58905465 (estimated locally),4.04 per call) ft_lstpush/251 (59206135 (estimated locally),4.06 per call) ft_lstdelone/248 (17228952 (estimated locally),1.18 per call) ft_lstnew/250 (17228952 (estimated locally),1.18 per call) __fprintf_chk/246 (7383836 (estimated locally),0.51 per call) ft_lstdelone/248 (67453534 (estimated locally),4.62 per call) ft_lstnew/250 (67453534 (estimated locally),4.62 per call) strcmp/252 (955630225 (estimated locally),65.46 per call) ft_lstdelone/248 (30118453 (estimated locally),2.06 per call) ft_lstdelone/248 (118111578 (estimated locally),8.09 per call) ft_lstdelone/248 (14598060 (estimated locally),1.00 per call) 
+stderr/245 (stderr)
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: sort_symbols32/230 (read) sort_symbols32/230 (read) sort_symbols64/229 (read) sort_symbols64/229 (read) nm_bin_dump_nm32/232 (read) nm_bin_dump_nm64/233 (read) nm_bin_dump_syms32/241 (read) nm_bin_dump_syms64/242 (read) nm_bin_dump_nm.part.0/391 (read) nm_bin_dump_phdr.part.0/397 (read) nm_bin_dump_phdr.part.0/397 (read) nm_bin_dump_nm/234 (read) nm_bin_parse64_ehdr/472 (read) nm_bin_parse64_ehdr/472 (read) nm_bin_parse64_ehdr/472 (read) nm_bin_parse64_ehdr/472 (read) nm_bin_parse32_ehdr/473 (read) nm_bin_parse32_ehdr/473 (read) nm_bin_parse32_ehdr/473 (read) nm_bin_parse32_ehdr/473 (read) nm_bin_parse_ehdr/474 (read) nm_bin_parse_ehdr/474 (read) nm_bin_parse_ehdr/474 (read) nm_bin_parse_ehdr/474 (read) nm_bin_parse_ehdr/474 (read) nm_bin_parse_ehdr/474 (read) nm_bin_parse_ehdr/474 (read) nm_bin_parse_ehdr/474 (read) nm_bin_parse_ehdr/474 (read) nm_bin_parse_phdr_32/475 (read) nm_bin_parse_phdr_32/475 (read) nm_bin_parse_phdr_64/476 (read) nm_bin_parse_phdr_64/476 (read) nm_bin_parse_shdr_32/478 (read) nm_bin_parse_shdr_32/478 (read) nm_bin_parse_shdr_32/478 (read) nm_bin_parse_shdr_64/479 (read) nm_bin_parse_shdr_64/479 (read) nm_bin_parse_shdr_64/479 (read) nm_bin_parse_syms64/481 (read) nm_bin_parse_syms64/481 (read) nm_bin_parse_syms64/481 (read) nm_bin_parse_syms64/481 (read) nm_bin_parse_syms32/482 (read) nm_bin_parse_syms32/482 (read) nm_bin_parse_syms32/482 (read) nm_bin_parse_syms32/482 (read) inject_shdr64/638 (read) inject_shdr64/638 (read) inject_shdr64/638 (read) inject_shdr64/638 (read) inject_shdr64/638 (read) inject_shdr64/638 (read) inject_shdr64/638 (read) inject_shdr64/638 (read) nm_bin_transform_section_injection.part.0/657 (read) 
+  Read from file: build/obj/nm_bin_dump.o
+  Availability: not_available
+  Varpool flags:
+sort_symbols32/230 (sort_symbols32)
+  Type: function definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly
+  References: default_del/137 (addr) default_del/137 (addr) default_del/137 (addr) default_del/137 (addr) stderr/245 (read) default_del/137 (addr) stderr/245 (read) default_del/137 (addr) 
+  Referring: 
+  Read from file: build/obj/nm_bin_dump.o
+  Availability: local
+  Unit id: 3
+  Function flags: count:14598060 (estimated locally) local
+  Called by: nm_bin_dump_nm.part.0/391 (1073741824 (estimated locally),1.00 per call) 
+  Calls: ft_lstdelone/248 (58905465 (estimated locally),4.04 per call) __fprintf_chk/246 (58905465 (estimated locally),4.04 per call) ft_lstpush/251 (59206135 (estimated locally),4.06 per call) ft_lstdelone/248 (17228952 (estimated locally),1.18 per call) ft_lstnew/250 (17228952 (estimated locally),1.18 per call) __fprintf_chk/246 (7383836 (estimated locally),0.51 per call) ft_lstdelone/248 (67453534 (estimated locally),4.62 per call) ft_lstnew/250 (67453534 (estimated locally),4.62 per call) strcmp/252 (955630225 (estimated locally),65.46 per call) ft_lstdelone/248 (30118453 (estimated locally),2.06 per call) ft_lstdelone/248 (118111578 (estimated locally),8.09 per call) ft_lstdelone/248 (14598060 (estimated locally),1.00 per call) 
+nm_bin_dump_shdr64/239 (nm_bin_dump_shdr64)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  Address is taken.
+  References: 
+  Referring: nm_bin_dump_shdr/240 (addr) 
+  Read from file: build/obj/nm_bin_dump.o
+  Availability: available
+  Unit id: 3
+  Function flags: count:1073741823 (estimated locally)
+  Called by: 
+  Calls: __printf_chk/244 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (92836781 (estimated locally),0.09 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) 
+nm_bin_dump_shdr32/238 (nm_bin_dump_shdr32)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  Address is taken.
+  References: 
+  Referring: nm_bin_dump_shdr/240 (addr) 
+  Read from file: build/obj/nm_bin_dump.o
+  Availability: available
+  Unit id: 3
+  Function flags: count:1073741823 (estimated locally)
+  Called by: 
+  Calls: __printf_chk/244 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (92836781 (estimated locally),0.09 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) 
+nm_bin_dump_phdr64/236 (nm_bin_dump_phdr64)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  Address is taken.
+  References: 
+  Referring: nm_bin_dump_phdr.part.0/397 (addr) 
+  Read from file: build/obj/nm_bin_dump.o
+  Availability: available
+  Unit id: 3
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: __printf_chk/244 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (134633428 (estimated locally),0.13 per call) __printf_chk/244 (134633428 (estimated locally),0.13 per call) __printf_chk/244 (132623973 (estimated locally),0.12 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) 
+nm_bin_dump_phdr32/235 (nm_bin_dump_phdr32)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  Address is taken.
+  References: 
+  Referring: nm_bin_dump_phdr.part.0/397 (addr) 
+  Read from file: build/obj/nm_bin_dump.o
+  Availability: available
+  Unit id: 3
+  Function flags: count:1073741824 (estimated locally)
+  Called by: 
+  Calls: __printf_chk/244 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) __printf_chk/244 (401890828 (estimated locally),0.37 per call) 
+ft_lstdel/136 (ft_lstdel)
+  Type: function
+  Visibility: semantic_interposition external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Unit id: 2
+  Function flags:
+  Called by: nm_clean.part.0/839 (1073741824 (estimated locally),1.00 per call) nm_bin_clean/123 (574129753 (estimated locally),0.53 per call) nm_bin_clean/123 (574129753 (estimated locally),0.53 per call) nm_bin_clean/123 (574129753 (estimated locally),0.53 per call) 
+  Calls: 
+nm_bin/124 (nm_bin)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  References: 
+  Referring: 
+  Read from file: build/obj/nm_bin.o
+  Availability: available
+  Unit id: 2
+  Function flags: count:1073741824 (estimated locally)
+  Called by: nm/820 (315357972 (estimated locally),2.62 per call) 
+  Calls: nm_bin_clean/123 (1073741824 (estimated locally),1.00 per call) nm_bin_test/560 (177167400 (estimated locally),0.16 per call) nm_bin_injection/122 (354334800 (estimated locally),0.33 per call) nm_bin_dump/121 (354334800 (estimated locally),0.33 per call) nm_bin_parse/120 (1073741824 (estimated locally),1.00 per call) 
+nm_bin_injection/122 (nm_bin_injection)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  References: 
+  Referring: 
+  Read from file: build/obj/nm_bin.o
+  Availability: available
+  Unit id: 2
+  Function flags: count:1073741824 (estimated locally)
+  Called by: nm_bin/124 (354334800 (estimated locally),0.33 per call) 
+  Calls: nm_bin_injection.part.0/138 (354334800 (estimated locally),0.33 per call) 
+nm_bin_dump/121 (nm_bin_dump)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  References: 
+  Referring: 
+  Read from file: build/obj/nm_bin.o
+  Availability: available
+  Unit id: 2
+  Function flags: count:1073741824 (estimated locally)
+  Called by: nm_bin/124 (354334800 (estimated locally),0.33 per call) 
+  Calls: nm_bin_dump_nm/234 (354334800 (estimated locally),0.33 per call) nm_bin_dump_syms/243 (354334800 (estimated locally),0.33 per call) nm_bin_dump_shdr/240 (354334800 (estimated locally),0.33 per call) nm_bin_dump_phdr/237 (354334800 (estimated locally),0.33 per call) nm_bin_dump_ehdr/227 (354334800 (estimated locally),0.33 per call) 
+nm_bin_parse/120 (nm_bin_parse)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def_ironly public
+  References: 
+  Referring: 
+  Read from file: build/obj/nm_bin.o
+  Availability: available
+  Unit id: 2
+  Function flags: count:1073741824 (estimated locally)
+  Called by: nm_bin_test/560 (955630225 (estimated locally),8.09 per call) nm_bin/124 (1073741824 (estimated locally),1.00 per call) 
+  Calls: nm_bin_parse_syms/484 (275991376 (estimated locally),0.26 per call) nm_bin_parse_shdr/480 (116930483 (estimated locally),0.11 per call) nm_bin_parse_phdr/477 (354334800 (estimated locally),0.33 per call) nm_bin_parse_ehdr/474 (1073741824 (estimated locally),1.00 per call) 
+nm_bin_injection.part.0/138 (nm_bin_injection.part.0)
+  Type: function definition analyzed
+  Visibility: semantic_interposition artificial
+  References: 
+  Referring: 
+  Read from file: build/obj/nm_bin.o
+  Availability: local
+  Unit id: 2
+  Function flags: count:1073741824 (estimated locally) local split_part
+  Called by: nm_bin_injection/122 (354334800 (estimated locally),0.33 per call) 
+  Calls: nm_bin_write/727 (1073741824 (estimated locally),1.00 per call) 
+default_del/137 (default_del)
+  Type: function
+  Visibility: semantic_interposition external public
+  Address is taken.
+  References: 
+  Referring: nm_bin_clean/123 (addr) nm_bin_clean/123 (addr) nm_bin_clean/123 (addr) sort_symbols32/230 (addr) sort_symbols32/230 (addr) sort_symbols32/230 (addr) sort_symbols32/230 (addr) sort_symbols32/230 (addr) sort_symbols32/230 (addr) sort_symbols64/229 (addr) sort_symbols64/229 (addr) sort_symbols64/229 (addr) sort_symbols64/229 (addr) sort_symbols64/229 (addr) sort_symbols64/229 (addr) nm_clean.part.0/839 (addr) 
+  Availability: not_available
+  Unit id: 2
+  Function flags:
+  Called by: 
+  Calls: 
+nm_bin_clean/123 (nm_bin_clean)
+  Type: function definition analyzed
+  Visibility: semantic_interposition prevailing_def_ironly
+  References: default_del/137 (addr) default_del/137 (addr) default_del/137 (addr) 
+  Referring: 
+  Read from file: build/obj/nm_bin.o
+  Availability: local
+  Unit id: 2
+  Function flags: count:1073741824 (estimated locally) local
+  Called by: nm_bin/124 (1073741824 (estimated locally),1.00 per call) 
+  Calls: ft_lstdel/136 (574129753 (estimated locally),0.53 per call) ft_lstdel/136 (574129753 (estimated locally),0.53 per call) ft_lstdel/136 (574129753 (estimated locally),0.53 per call) 
+main/58 (main)
+  Type: function definition analyzed
+  Visibility: externally_visible semantic_interposition prevailing_def public
+  References: 
+  Referring: 
+  Read from file: build/obj/main.o
+  Availability: available
+  Unit id: 1
+  Function flags: count:1073741824 (estimated locally) only_called_at_startup executed_once
+  Called by: 
+  Calls: nm/820 (354334800 (estimated locally),0.33 per call) nm_getopt/922 (1073741824 (estimated locally),1.00 per call) 
+Writing partition  to file /tmp/ccjziyTN.ltrans0.o, 2537 insns
+  Symbols in partition: main/58 nm/820 nm_clean.part.0/839 nm_bin/124 nm_bin_clean/123 nm_bin_test.isra.0/984 nm_bin_injection.isra.0/987 nm_bin_injection.part.0.isra.0/988 nm_bin_write.isra.0/983 nm_bin_write32.part.0/738 nm_bin_write64.part.0/737 nm_bin_dump/121 nm_bin_dump_syms/243 nm_bin_dump_syms32/241 nm_bin_dump_syms64/242 nm_bin_dump_shdr/240 nm_bin_dump_shdr32/238 nm_bin_dump_shdr64/239 nm_bin_dump_phdr/237 nm_bin_dump_phdr.part.0/397 nm_bin_dump_phdr32/235 nm_bin_dump_phdr64/236 nm_bin_dump_ehdr/227 nm_bin_load/818 err_return/974 err_return/994 err_return/992 err_return/993 err_return/991 nm_getopt/922 flags_handler/921 flags_list/909 nm_bin_parse/120 nm_bin_parse_syms/484 nm_bin_parse_syms64/481 nm_bin_parse_syms32/482 nm_bin_get_sym_sections.constprop.0.isra.0/982 nm_bin_parse_shdr/480 nm_bin_parse_shdr_64/479 nm_bin_parse_shdr_32/478 nm_bin_parse_phdr/477 nm_bin_parse_phdr_64/476 nm_bin_parse_phdr_32/475 nm_bin_parse_ehdr/474 nm_bin_parse64_ehdr/472 nm_bin_parse32_ehdr/473 nm_flag_magic/231 nm_flag_magic.part.0/256 nm_bin_dump_nm32/232 nm_bin_dump_nm64/233 nm_bin_dump_nm/234 sort_symbols64.isra.0/985 nm_bin_dump_nm.part.0/391 sort_symbols32.isra.0/986 nm_getopt_outfile/911 nm_getopt_nm/912 nm_getopt_help/913 flags_help/910 nm_getopt_config/914 nm_getopt_test/915 nm_getopt_outfile/989 nm_getopt_ehdr/916 nm_getopt_phdr/917 nm_getopt_section/918 nm_getopt_hexdump/919 nm_getopt_symbols/920 
+  Symbols in boundary: default_del/137 nm_bin_test/560 (body included)nm_bin_injection/122 (body included)nm_bin_injection.part.0/138 (body included)nm_bin_write/727 (body included)stderr/245 nm_bin_get_sym_sections/483 (body included)nm_bin_get_sym_sections.constprop.0/981 (body included)sort_symbols64/229 (body included)sort_symbols32/230 (body included)write/728 __printf_chk/244 memset/333 ft_lstdel/136 *open/736 close/730 lseek/729 ft_lstiter/247 memcpy/332 __fprintf_chk/246 putchar/399 puts/398 mmap/824 fstat/822 __dprintf_chk/978 ft_lstpush/251 ft_lstnew/250 strlen/927 strcmp/252 __builtin_unreachable/990 ft_lstdelone/248 

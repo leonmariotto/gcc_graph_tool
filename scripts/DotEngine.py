@@ -20,15 +20,35 @@ class DotEngine:
     Class used to manipulate dot file.
     """
 
-    def __init__(self, input_file: str):
+    def __init__(self):
         """
         Init DotEngine
         """
         self.logger = logging.getLogger(__name__)
+        self.pydot_graph = None
+
+    def parse_dot(self, input_file: str):
         pydot_graphs = pydot.graph_from_dot_file(input_file)
         self.pydot_graph = pydot_graphs[0]
 
+    def create_dot(self):
+        self.pydot_graph = pydot.Dot(graph_type="digraph")
+
+    def create_and_add_node(self, name: str, label: str = ""):
+        if self.pydot_graph is None:
+            raise DotEngineError()
+        node = pydot.Node(name, label=label)
+        self.pydot_graph.add_node(node)
+
+    def create_and_connect_edge(self, name_a: str, name_b: str):
+        if self.pydot_graph is None:
+            raise DotEngineError()
+        edge = pydot.Edge(name_a, name_b)
+        self.pydot_graph.add_edge(edge)
+
     def modify_nodes_label(self):
+        if self.pydot_graph is None:
+            raise DotEngineError()
         for node in self.pydot_graph.get_nodes():
             label = node.get_label()
             match = re.search(r"VCG:\\\s*\d+:\\\s*([_a-zA-Z0-9]+)", label)
@@ -40,6 +60,8 @@ class DotEngine:
         """
         Modify attributes.
         """
+        if self.pydot_graph is None:
+            raise DotEngineError()
         # Modify graph attributes
         self.pydot_graph.set_bgcolor(dot_config.global_conf.bgcolor)
         self.pydot_graph.set_rankdir(dot_config.global_conf.rankdir)
@@ -63,4 +85,6 @@ class DotEngine:
         """
         Write the content of graph into a SVG file.
         """
+        if self.pydot_graph is None:
+            raise DotEngineError()
         self.pydot_graph.write_svg(output_path)
