@@ -73,6 +73,7 @@ class CgraphParser:
         self.reset_sym_info()
         self.parse_syms(input_file)
         self.logger.setLevel(logging.INFO)
+        self.draw_edges:List[str] = []
 
     @staticmethod
     def make_hash(name: str) -> bytes:
@@ -102,6 +103,9 @@ class CgraphParser:
         for word in words:
             self.sym_info["s_calls"] += [CgraphParser.make_hash(word)]
             self.sym_info["s_calls_name"] += [word]
+        self.logger.debug("sym_name=%s calls list : [%s]",
+                          self.sym_info["s_name"],
+                          ' '.join(self.sym_info["s_calls_name"]))
 
     def parse_syms(self, input_file: str):
         """
@@ -121,7 +125,7 @@ class CgraphParser:
                         self.symbol_table[
                             CgraphParser.make_hash(self.sym_info["s_name"])
                         ] = SymbolInfo(**self.sym_info)
-                        # self.logger.debug("Registered new symbol name=%s", self.sym_info["s_name"])
+                        self.logger.debug("Registered new symbol name=%s", self.sym_info["s_name"])
                         self.reset_sym_info()
                         in_entry = False
                         i += 1
@@ -149,10 +153,14 @@ class CgraphParser:
                 self.logger.error("Error hash not found! callee_name=%s", callee_name)
                 continue
             self.create_node(callee_sym, dot_engine)
-            dot_engine.create_and_connect_edge(
-                sym.s_name,
-                self.symbol_table[callee_hash].s_name,
-            )
+            edge_string = f"{sym.s_name}->{callee_sym.s_name}"
+            self.logger.debug("Create edge [%s]", edge_string)
+            if edge_string not in self.draw_edges:
+                dot_engine.create_and_connect_edge(
+                    sym.s_name,
+                    self.symbol_table[callee_hash].s_name,
+                )
+                self.draw_edges += [edge_string]
 
     def create_callgraph(self, dot_config: DotConfig, output_file: str):
         """ """
