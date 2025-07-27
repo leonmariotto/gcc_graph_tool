@@ -1,0 +1,9 @@
+
+TODO:
+    - can use the feature of dot-file modification (from fanalyzer-callgraph dot file) and
+        the feature of dot file generation from .ci file (compiler internal from -fdump-graph)
+		and the feature of .cgraph parsing and .dot generation. 3 executable ? options ?
+	- A ENTRY symbol should be specified, so only called function from this entry will be displayed
+		in the output graph.
+	- Update README.md and built documentation.
+	- Add unit_test and some functionnal test. (functionnal test -> bash script ?)
